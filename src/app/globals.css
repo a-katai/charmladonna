@@ -155,7 +155,7 @@ body {
   right: 0;
   padding: 24px;
   background: linear-gradient(to top, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0) 100%);
-  color: #ffffff;
+  z-index: 2;
 }
 
 .gallery-category,
@@ -182,7 +182,6 @@ body {
   width: 100%;
   background-color: #ffffff;
   padding-top: 80px;
-  overflow: hidden;
 }
 
 .gallery-section-title {

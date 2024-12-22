@@ -2,6 +2,39 @@
 
 import { useEffect, useState } from 'react'
 
+const galleryImages = [
+  {
+    src: '/gallery/badbunny.jpg',
+    category: 'Music',
+    title: 'Bad Bunny',
+    description: 'Performance direction'
+  },
+  {
+    src: '/gallery/dua.jpg',
+    category: 'Music',
+    title: 'Dua Lipa',
+    description: 'Stage design'
+  },
+  {
+    src: '/gallery/kendrick.jpeg',
+    category: 'Music',
+    title: 'Kendrick Lamar',
+    description: 'Creative direction'
+  },
+  {
+    src: '/gallery/rosalia.jpg',
+    category: 'Music',
+    title: 'Rosalía',
+    description: 'Stage design'
+  },
+  {
+    src: '/gallery/shensea.jpg',
+    category: 'Music',
+    title: 'Shensea',
+    description: 'Performance direction'
+  }
+];
+
 export default function Home() {
   return (
     <main>
@@ -35,101 +68,20 @@ export default function Home() {
       <section className="gallery-section">
         <h2 className="gallery-section-title">The Work.</h2>
         <div className="gallery-track">
-          <div className="gallery-item">
-            <img 
-              src="/gallery/badbunny.jpg" 
-              alt="Bad Bunny"
-              style={{
-                width: '100%',
-                height: '200px',
-                objectFit: 'cover'
-              }}
-            />
-            <div className="gallery-content">
-              <span className="gallery-category">Music</span>
-              <h3 className="gallery-title">Bad Bunny</h3>
-              <p className="gallery-description">Performance direction</p>
-            </div>
-          </div>
-
-          <div className="gallery-item">
-            <img 
-              src="/gallery/dua.jpg" 
-              alt="Dua Lipa"
-              style={{
-                width: '100%',
-                height: '200px',
-                objectFit: 'cover'
-              }}
-            />
-            <div className="gallery-content">
-              <span className="gallery-category">Music</span>
-              <h3 className="gallery-title">Dua Lipa</h3>
-              <p className="gallery-description">Choreography</p>
-            </div>
-          </div>
-
-          <div className="gallery-item">
-            <img 
-              src="/gallery/kendrick.jpeg" 
-              alt="Kendrick"
-              style={{
-                width: '100%',
-                height: '200px',
-                objectFit: 'cover'
-              }}
-            />
-            <div className="gallery-content">
-              <span className="gallery-category">Music</span>
-              <h3 className="gallery-title">Kendrick Lamar</h3>
-              <p className="gallery-description">Creative direction</p>
-            </div>
-          </div>
-
-          <div className="gallery-item">
-            <img 
-              src="/gallery/rosalia.jpg" 
-              alt="Rosalia"
-              style={{
-                width: '100%',
-                height: '200px',
-                objectFit: 'cover'
-              }}
-            />
-            <div className="gallery-content">
-              <span className="gallery-category">Music</span>
-              <h3 className="gallery-title">Rosalía</h3>
-              <p className="gallery-description">Stage design</p>
-            </div>
-          </div>
-
-          <div className="gallery-item">
-            <img 
-              src="/gallery/shensea.jpg" 
-              alt="Shensea"
-              style={{
-                width: '100%',
-                height: '200px',
-                objectFit: 'cover'
-              }}
-            />
-            <div className="gallery-content">
-              <span className="gallery-category">Music</span>
-              <h3 className="gallery-title">Shensea</h3>
-              <p className="gallery-description">Performance direction</p>
-            </div>
-          </div>
-
-          {/* Repeat pattern for remaining items to reach 20 */}
-          {[...Array(15)].map((_, index) => (
-            <div className="gallery-item" key={index + 5}>
-              <div className="gallery-content">
-                <span className="gallery-category">Project {index + 6}</span>
-                <h3 className="gallery-title">Project Title {index + 6}</h3>
-                <p className="gallery-description">Description for project {index + 6}</p>
+          {[...Array(20)].map((_, index) => {
+            const imageIndex = index % galleryImages.length;
+            const image = galleryImages[imageIndex];
+            return (
+              <div className="gallery-item" key={index}>
+                <img src={image.src} alt={image.title} />
+                <div className="gallery-content">
+                  <span className="gallery-category">{image.category}</span>
+                  <h3 className="gallery-title">{image.title}</h3>
+                  <p className="gallery-description">{image.description}</p>
+                </div>
               </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </section>
     </main>
