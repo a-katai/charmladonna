@@ -189,6 +189,68 @@ export default function Home() {
     }
   };
 
+  useEffect(() => {
+    // Get video element
+    const video = document.querySelector('.hero-video') as HTMLVideoElement;
+    const videoContainer = document.querySelector('.hero-video-container');
+    
+    // Function to handle video play
+    const playVideo = async () => {
+      if (video) {
+        try {
+          // Reset video to beginning
+          video.currentTime = 0;
+          // Set all necessary attributes
+          video.muted = true;
+          video.playsInline = true;
+          // Force play
+          await video.play();
+          console.log('Video playing');
+        } catch (err) {
+          console.error('Video play failed:', err);
+        }
+      }
+    };
+
+    // Try to play video immediately
+    playVideo();
+
+    // Also try after a short delay
+    setTimeout(playVideo, 1000);
+
+    // Handle scroll effect
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY;
+      const videoContainer = document.querySelector('.hero-video-container') as HTMLDivElement;
+      const maxScroll = 300;
+      
+      if (videoContainer && scrollPosition <= maxScroll) {
+        const progress = scrollPosition / maxScroll;
+        const widthReduction = Math.min(224, progress * 224);
+        const scale = Math.max(0.97, 1 - progress * 0.03);
+        const borderRadius = Math.min(16, progress * 16);
+        
+        const finalWidth = `calc(100% - ${widthReduction + 1}px)`;
+        const marginOffset = (widthReduction / 2) + 0.5;
+        
+        videoContainer.style.width = finalWidth;
+        videoContainer.style.marginLeft = `${marginOffset}px`;
+        videoContainer.style.marginRight = `${marginOffset}px`;
+        videoContainer.style.transform = `scale(${scale})`;
+        videoContainer.style.borderRadius = `${borderRadius}px`;
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    // Also try to play video on user interaction
+    window.addEventListener('click', playVideo);
+    
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener('click', playVideo);
+    };
+  }, []);
+
   return (
     <main>
       <header className="header">
@@ -209,15 +271,15 @@ export default function Home() {
       </header>
       <div className="hero-video-container">
         <video 
-          autoPlay 
-          muted 
-          loop 
-          playsInline
           className="hero-video"
+          autoPlay
+          playsInline
+          muted
+          loop
+          preload="auto"
+          controls={false}
         >
-          <source src="/charm.mov" type="video/quicktime" />
-          <source src="/charm.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
+          <source src="/charm.mov" type="video/mp4" />
         </video>
       </div>
       <h1 className="title">The Work.</h1>
