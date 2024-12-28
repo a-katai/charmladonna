@@ -226,9 +226,39 @@ body {
 
 .social-icons {
   display: flex;
+  flex-direction: row;
   gap: 24px;
-  align-items: center;
-  position: relative;
+  margin-top: 24px;
+}
+
+.social-icons a {
+  color: black;
+  text-decoration: none;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+}
+
+.social-icons img,
+.social-icons svg {
+  width: 100%;
+  height: 100%;
+}
+
+.social-icons a:first-child {
+  order: 1; /* Instagram */
+}
+
+.social-icons a:nth-child(2) {
+  order: 2; /* Twitter */
+}
+
+.social-icons a:nth-child(3) {
+  order: 3; /* YouTube */
+}
+
+.social-icons a:nth-child(4) {
+  order: 4; /* TikTok */
 }
 
 .social-icon {
@@ -304,62 +334,45 @@ body {
 }
 
 .footer {
-  position: relative;
-  width: 100%;
-  padding: 20px;
-  background: white;
-}
-
-.footer-container {
-  max-width: 1600px;
-  margin: 0 auto;
-  padding: 0 64px;
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
-}
-
-.footer-row {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.footer-social {
-  display: flex;
-  gap: 24px;
+  padding: 40px 112px;
 }
 
 .footer-links {
   display: flex;
-  gap: 32px;
+  gap: 24px;
+  margin-bottom: 24px;
 }
 
-.footer-link {
-  color: #1d1d1f;
+.footer-links a {
+  color: black;
   text-decoration: none;
   font-size: 14px;
-  transition: color 0.2s ease;
 }
 
-.footer-link:hover {
-  color: #666;
+/* Social Icons */
+.social-links {
+  display: flex;
+  align-items: center;
 }
 
-.social-icon {
-  width: 24px;
-  height: 24px;
-  color: #1d1d1f;
-  transition: transform 0.2s ease;
+.social-links a {
+  margin-right: 40px; /* Much larger spacing */
 }
 
-.social-icon:hover {
-  transform: translateY(-4px);
+.social-links a:last-child {
+  margin-right: 0; /* Remove margin from last item */
 }
 
-.footer-copyright {
+.copyright {
   font-size: 12px;
   color: #666;
+  margin-top: 16px;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 40px 24px;
+  }
 }
 
 .gallery-nav {
@@ -1029,5 +1042,150 @@ body.modal-open {
   .title,
   .gallery-track {
     padding: 0 40px;
+  }
+}
+
+/* Footer styles */
+.footer {
+  padding: 40px 112px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.footer-links {
+  display: flex;
+  gap: 24px;
+}
+
+.footer-links a {
+  color: black;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.social-icons {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  margin-top: 24px;
+}
+
+.social-icons a {
+  color: black;
+  text-decoration: none;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+}
+
+.social-icons img,
+.social-icons svg {
+  width: 100%;
+  height: 100%;
+}
+
+.copyright {
+  font-size: 12px;
+  color: #666;
+  margin-top: 16px;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    gap: 24px;
+    padding: 40px 24px;
+  }
+}
+
+/* Social icons container */
+.social-container {
+  display: flex;
+  flex-direction: row;
+}
+
+/* Individual social icon */
+.social-icon {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-right: 20px; /* Add direct margin */
+}
+
+.social-icon:last-child {
+  margin-right: 0; /* Remove margin from last icon */
+}
+
+/* Contact Form Styles */
+.contact-form {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 40px var(--padding-desktop);
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.contact-form textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.contact-form button {
+  width: 100%;
+  padding: 12px;
+  background: black;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.contact-form button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.success {
+  color: green;
+  margin-top: 16px;
+}
+
+.error {
+  color: red;
+  margin-top: 16px;
+}
+
+@media (max-width: 768px) {
+  .contact-form {
+    padding: 24px var(--padding-mobile);
+  }
+}
+
+/* Social Icons */
+footer svg {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s ease;
+}
+
+footer a:hover svg {
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  footer svg {
+    width: 20px;
+    height: 20px;
   }
 }
