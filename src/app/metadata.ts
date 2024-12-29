@@ -1,25 +1,7 @@
-import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
-import './globals.css'
-
-const inter = Inter({ subsets: ['latin'] })
+import { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Charm LaDonna | Choreographer & Creative Director',
   description: 'Charm LaDonna is a visionary choreographer and creative director, known for her work with global artists and innovative stage direction.',
   keywords: 'Charm LaDonna, choreographer, creative director, dance, music videos, tours, live performances',
-}
-
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
-  return (
-    <html lang="en">
-      <body className={inter.className}>
-        {children}
-      </body>
-    </html>
-  )
 } 

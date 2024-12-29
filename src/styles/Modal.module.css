@@ -1,0 +1,231 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+  backdrop-filter: blur(10px);
+}
+
+.content {
+  background: rgba(0, 0, 0, 0.5);
+  width: 50vw;
+  height: 50vh;
+  border-radius: 25px;
+  position: relative;
+  color: white;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.close {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  background: none;
+  border: none;
+  font-size: 32px;
+  cursor: pointer;
+  padding: 8px;
+  color: white;
+  z-index: 2001;
+  opacity: 0.8;
+  transition: opacity 0.2s ease;
+}
+
+.close:hover {
+  opacity: 0.6;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 32px;
+  color: white;
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 24px;
+}
+
+.section {
+  text-align: left;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.sectionTitle {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: white;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.list li {
+  margin-bottom: 12px;
+  font-size: 15px;
+  color: white;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .content {
+    padding: 32px 24px;
+  }
+  
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+}
+
+.directory {
+  padding: 40px;
+  padding-top: 80px;
+  height: 100%;
+  overflow-y: auto;
+  text-align: left;
+}
+
+.artist {
+  margin-bottom: 32px;
+  padding-right: 20px;
+}
+
+.artistName {
+  font-size: 24px;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 24px;
+  letter-spacing: 0.5px;
+  text-align: left;
+}
+
+.artist p {
+  color: white;
+  font-size: 15px;
+  line-height: 1.6;
+  margin: 4px 0;
+  opacity: 0.9;
+  text-align: left;
+}
+
+.artist p + p {
+  margin-top: 24px;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.content::-webkit-scrollbar {
+  width: 8px;
+}
+
+.content::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.content::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+}
+
+.content::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.form {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.formGroup {
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 500px;
+}
+
+.formGroup input,
+.formGroup textarea {
+  width: 100%;
+  padding: 12px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 6px;
+  color: white;
+  font-size: 15px;
+  transition: border-color 0.2s ease;
+}
+
+.formGroup input:focus,
+.formGroup textarea:focus {
+  outline: none;
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.formGroup input::placeholder,
+.formGroup textarea::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.formGroup textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.submitButton {
+  width: 100%;
+  padding: 14px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 6px;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-align: center;
+}
+
+.submitButton:hover:not(.disabled) {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.submitButton.disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+/* Form disabled state */
+.formGroup input:disabled,
+.formGroup textarea:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+/* Form specific styles */
+.artist.formContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100%;
+  padding-right: 0;
+  margin-bottom: 0;
+  width: 100%;
+}

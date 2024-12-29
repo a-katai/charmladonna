@@ -1,0 +1,11 @@
+.siteCredit {
+    font-size: 11px;
+    color: rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+    margin-top: 4px;
+    display: block;
+}
+
+.siteCredit:hover {
+    color: rgba(0, 0, 0, 0.7);
+} 
