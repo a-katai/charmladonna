@@ -54,4 +54,18 @@ export const metadata: Metadata = {
       }
     ]
   },
+  other: {
+    'json-ld': JSON.stringify({
+      '@context': 'https://schema.org',
+      '@type': 'Organization',
+      'name': "Charm La'Donna",
+      'url': 'https://charmladonna.com',
+      'logo': 'https://charmladonna.com/gallery/lululemon_dance_pants.jpg',
+      'sameAs': [
+        'https://www.instagram.com/CharmLaDonna',
+        'https://www.twitter.com/CharmLaDonna',
+        'https://www.facebook.com/CharmLaDonna'
+      ]
+    })
+  }
 } 
