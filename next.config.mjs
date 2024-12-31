@@ -9,11 +9,15 @@ const nextConfig = {
   },
   // Enable gzip compression
   compress: true,
-  // CDN and caching optimizations
+  // Enhanced image optimization settings
   images: {
     domains: ['charmladonna.com'],
     minimumCacheTTL: 60,
-    formats: ['image/webp'],
+    formats: ['image/webp', 'image/avif'],
+    deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048],
+    imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
+    quality: 75,
+    minimumCacheTTL: 60 * 60 * 24, // 24 hours
   },
   // Headers for caching
   async headers() {
