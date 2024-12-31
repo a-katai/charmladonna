@@ -253,3 +253,12 @@
     color: rgba(0, 0, 0, 0.7);
   }
   
+  .artist {
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    margin: 4px 0;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+  }
+  

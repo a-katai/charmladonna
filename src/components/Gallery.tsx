@@ -29,7 +29,7 @@ export default function Gallery({ images, onImageClick }: GalleryProps) {
           >
             <div className={styles.itemInner}>
               <div className={styles.content}>
-                <span className={styles.category}>{image.category}</span>
+                {image.artist && <h3 className={styles.artist}>{image.artist}</h3>}
                 <h3 className={styles.itemTitle}>{image.title}</h3>
               </div>
               <Image 

@@ -1,9 +1,10 @@
 export interface GalleryImage {
   src: string;
   category: string;
+  artist?: string;
   title: string;
   description: string;
-  videoId?: string;
+  videoId: string;
   externalLink?: string;
 }
 

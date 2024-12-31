@@ -1,152 +1,158 @@
-"use client"
+"use client";
 
-import { GalleryImage } from '@/types/gallery'
-
-const PLACEHOLDER_IMAGE = '/gallery/lululemon_dance_pants.jpg'
+import { GalleryImage } from '@/types/gallery';
 
 export const galleryImages: GalleryImage[] = [
-  // 1
   {
-    src: PLACEHOLDER_IMAGE,
-    category: 'Live Performance',
-    title: 'Beyoncé Netflix Christmas Halftime Show',
-    description: 'Captivating choreography for Beyoncé’s spectacular holiday halftime show on Netflix.',
-    videoId: 'placeholder-beyonce-christmas'
+    src: '/gallery/beyonce.jpg',
+    category: "Live Performance",
+    artist: "Beyoncé",
+    title: "Netflix Christmas Halftime Show",
+    description:
+      "Captivating choreography for Beyoncé's spectacular holiday halftime show on Netflix.",
+    videoId: "placeholder-beyonce-christmas",
   },
-  // 2
   {
-    src: PLACEHOLDER_IMAGE,
-    category: 'Tour',
-    title: 'Motomami World Tour',
-    description: 'Electrifying stage design and dynamic movement for Rosalía’s global Motomami experience.',
-    videoId: 'placeholder-motomami'
+    src: '/gallery/kendrick_lamar.jpg',
+    category: "Music Video",
+    artist: "Kendrick Lamar",
+    title: "Squabble Up",
+    description: "Innovative choreography and movement direction for Kendrick Lamar's dynamic performance.",
+    videoId: "placeholder-squabble-up",
   },
-  // 3
   {
-    src: PLACEHOLDER_IMAGE,
-    category: 'Tour',
-    title: 'The Big Steppers Tour',
-    description: 'Innovative staging for Kendrick Lamar’s worldwide run, pushing live performance boundaries.',
-    videoId: 'placeholder-big-steppers'
+    src: '/gallery/meghan_trainor_timeless.jpg',
+    category: "Music Video",
+    artist: "Megan Trainor",
+    title: "I Am Your Mother",
+    description:
+      "Directed by Charm La'Donna, this video combines bold visuals with memorable choreography.",
+    videoId: "placeholder-mother",
   },
-  // 4 (Music Video: add artist name)
   {
-    src: PLACEHOLDER_IMAGE,
-    category: 'Music Video',
-    title: 'Doja Cat "Streets"',
-    description: 'Bold, fluid choreography for Doja Cat’s viral music video phenomenon.',
-    videoId: 'placeholder-streets'
+    src: '/gallery/rosalia_motomami.jpg',
+    category: "Tour",
+    artist: "Rosalía",
+    title: "Motomami World Tour",
+    description:
+      "Dynamic movement direction and stage design for Rosalía's global tour.",
+    videoId: "placeholder-motomami",
   },
-  // 5 (Music Video: add artist name)
   {
-    src: PLACEHOLDER_IMAGE,
-    category: 'Music Video',
-    title: 'The Weeknd "Take My Breath"',
-    description: 'Sleek movement direction for The Weeknd’s chart-topping single, blending cinematic visuals with dance.',
-    videoId: 'placeholder-take-my-breath'
+    src: '/gallery/the_weeknd_superbowl.jpg',
+    category: "Live Performance",
+    artist: "The Weeknd",
+    title: "Super Bowl LV Halftime Show",
+    description:
+      "Creative direction and choreography for The Weeknd's iconic Super Bowl LV Halftime Show performance.",
+    videoId: "placeholder-superbowl",
   },
-  // 6
   {
-    src: PLACEHOLDER_IMAGE,
-    category: 'Tour',
-    title: 'Future Nostalgia Tour',
-    description: 'High-impact choreography for Dua Lipa’s blockbuster arena shows, delivering an immersive pop spectacle.',
-    videoId: 'placeholder-future-nostalgia'
+    src: '/gallery/salena_gomez_look_at_her_now.jpg',
+    category: "Music Video",
+    artist: "Selena Gomez",
+    title: "Look at Her Now",
+    description:
+      "Sleek and contemporary choreography for Selena Gomez's hit music video.",
+    videoId: "placeholder-look-at-her-now",
   },
-  // 7
   {
-    src: PLACEHOLDER_IMAGE,
-    category: 'Live Performance',
-    title: 'American Music Awards',
-    description: 'Flawless routines for Selena Gomez’s show-stopping appearance at the AMAs.',
-    videoId: 'placeholder-amas'
+    src: '/gallery/dua_lipa_dance_the_night.jpg',
+    category: "Music Video",
+    artist: "Dua Lipa",
+    title: "Houdini",
+    description:
+      "Enchanting choreography for Dua Lipa's magical music video experience.",
+    videoId: "placeholder-houdini",
   },
-  // 8
   {
-    src: PLACEHOLDER_IMAGE,
-    category: 'Tour',
-    title: 'Mi Casa Tu Casa Tour',
-    description: 'Vibrant stage production, fusing Latin rhythms and pop flair for Becky G’s energetic tour.',
-    videoId: 'placeholder-micasa'
+    src: '/gallery/rich_spirit.jpg',
+    category: "Music Video",
+    artist: "Kendrick Lamar",
+    title: "Rich Spirit",
+    description:
+      "Bold and innovative choreography for Kendrick Lamar's commanding stage presence.",
+    videoId: "placeholder-rich-spirit",
   },
-  // 9 (Music Video: add artist name)
   {
-    src: PLACEHOLDER_IMAGE,
-    category: 'Music Video',
-    title: 'Meghan Trainor "All About That Bass"',
-    description: 'Memorable dance routines for Meghan Trainor’s breakout hit, accentuating body-positive themes.',
-    videoId: 'placeholder-bass'
+    src: '/gallery/nas.jpg',
+    category: "Live Performance",
+    artist: "Nas",
+    title: "Grammy Awards 2022",
+    description:
+      "Impactful stage design and choreography for Nas's commanding Grammy appearance.",
+    videoId: "placeholder-grammys22",
   },
-  // 10
   {
-    src: PLACEHOLDER_IMAGE,
-    category: 'Live Performance',
-    title: 'Video Vanguard Performance',
-    description: 'Show-stopping moves for Shakira’s iconic VMA tribute, merging Latin flair and global pop appeal.',
-    videoId: 'placeholder-videovanguard'
+    src: '/gallery/ava_max_my_head_my_heart.jpg',
+    category: "Music Video",
+    artist: "Ava Max",
+    title: "My Head & My Heart",
+    description:
+      "Directed by Charm La'Donna, showcasing bold visuals and electrifying choreography.",
+    videoId: "placeholder-my-head-my-heart",
   },
-  // 11
   {
-    src: PLACEHOLDER_IMAGE,
-    category: 'Tour',
-    title: 'The Scarlet Tour',
-    description: 'Exhilarating movement direction for Ice Spice’s debut headlining run, bridging underground and mainstream vibes.',
-    videoId: 'placeholder-scarlet'
+    src: '/gallery/apple_music_harry_styles.jpg',
+    category: "Brand Campaign",
+    artist: "Apple",
+    title: "Harry Styles Live Performance",
+    description:
+      "Innovative collaboration with Harry Styles for Apple Music, blending tech and artistry.",
+    videoId: "placeholder-apple",
   },
-  // 12
   {
-    src: PLACEHOLDER_IMAGE,
-    category: 'Live Performance',
-    title: 'Something in the Water Festival',
-    description: 'Dynamic choreography for Pharrell Williams’s signature festival, celebrating music, art, and community.',
-    videoId: 'placeholder-sitw'
+    src: '/gallery/lululemon_dance_pants.jpg',
+    category: "Brand Campaign",
+    artist: "Lululemon",
+    title: "Dance Pants Campaign",
+    description:
+      "Dynamic movement direction for Lululemon's iconic campaign, showcasing flexibility and style.",
+    videoId: "placeholder-lululemon",
   },
-  // 13
   {
-    src: PLACEHOLDER_IMAGE,
-    category: 'Tour',
-    title: 'Back Outside Tour',
-    description: 'High-energy routines for Lil Baby’s live shows, elevating modern hip-hop performance.',
-    videoId: 'placeholder-backoutside'
+    src: '/gallery/roddy_ricch.jpg',
+    category: "Live Performance",
+    artist: "Roddy Ricch",
+    title: "BET Awards",
+    description:
+      "Creative direction for Roddy Ricch's standout performance at the BET Awards.",
+    videoId: "placeholder-roddy-rich-bet",
   },
-  // 14 (Music Video: add artist name)
   {
-    src: PLACEHOLDER_IMAGE,
-    category: 'Music Video',
-    title: 'Megan Thee Stallion "Body"',
-    description: 'Fierce, empowering choreography celebrating confidence and self-expression for Megan Thee Stallion.',
-    videoId: 'placeholder-body'
+    src: '/gallery/lil_baby.jpg',
+    category: "Live Performance",
+    artist: "Lil Baby",
+    title: "Back Outside Tour",
+    description:
+      "High-energy routines for Lil Baby's electrifying Back Outside Tour, elevating modern hip-hop performance.",
+    videoId: "placeholder-lil-baby-live",
   },
-  // 15 (Music Video: add artist name)
   {
-    src: PLACEHOLDER_IMAGE,
-    category: 'Music Video',
-    title: 'Cardi B "Up"',
-    description: 'Vibrant, bold choreo for Cardi B’s high-energy anthem, delivering unstoppable club vibes.',
-    videoId: 'placeholder-up'
+    src: '/gallery/glastonberry.jpg',
+    category: "Live Performance",
+    artist: "Kendrick Lamar",
+    title: "Glastonbury Festival",
+    description:
+      "Mesmerizing choreography and stage design for Kendrick Lamar's Glastonbury performance.",
+    videoId: "placeholder-glastonbury",
   },
-  // 16
   {
-    src: PLACEHOLDER_IMAGE,
-    category: 'Live Performance',
-    title: 'Grammy Awards 2022',
-    description: 'Impactful stage design and choreography for Nas’s commanding Grammy appearance.',
-    videoId: 'placeholder-grammys22'
+    src: '/gallery/bad_bunny_baticano.jpg',
+    category: "Music Video",
+    artist: "Bad Bunny",
+    title: "Baticano",
+    description:
+      "Performance direction highlighting Bad Bunny's charismatic energy and unique artistry.",
+    videoId: "placeholder-baticano",
   },
-  // 17
   {
-    src: PLACEHOLDER_IMAGE,
-    category: 'Live Performance',
-    title: 'UEFA Champions League Final',
-    description: 'Electrifying halftime set for Anitta’s global spotlight, uniting Brazilian flair with pop showmanship.',
-    videoId: 'placeholder-championsleague'
+    src: '/gallery/the_perfect_couple_netflix.jpg',
+    category: "Television",
+    artist: "Netflix",
+    title: "The Perfect Couple",
+    description:
+      "Choreography for Netflix's The Perfect Couple, blending storytelling and dance.",
+    videoId: "placeholder-perfect-couple",
   },
-  // 18
-  {
-    src: PLACEHOLDER_IMAGE,
-    category: 'Tour',
-    title: 'Sticky and Sweet Tour',
-    description: 'A breakthrough performance opportunity at age 17, fueling a journey with the Queen of Pop, Madonna.',
-    videoId: 'placeholder-sticky-sweet'
-  }
-]
+];
