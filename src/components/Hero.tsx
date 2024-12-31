@@ -3,15 +3,7 @@
 import { useEffect, useRef } from 'react'
 import styles from '@/styles/Hero.module.css'
 
-interface HeroProps {
-  videoModal: {
-    isOpen: boolean;
-    videoId: string;
-  };
-  onClose: () => void;
-}
-
-export default function Hero({ videoModal, onClose }: HeroProps) {
+export default function Hero() {
   const videoRef = useRef<HTMLVideoElement>(null)
   const videoContainerRef = useRef<HTMLDivElement>(null)
   const containerRef = useRef<HTMLDivElement>(null)
@@ -57,41 +49,20 @@ export default function Hero({ videoModal, onClose }: HeroProps) {
   }, [])
 
   return (
-    <>
-      <div className={styles.container} ref={containerRef}>
-        <div className={styles.video} ref={videoContainerRef}>
-          <video 
-            ref={videoRef}
-            autoPlay
-            playsInline
-            muted
-            loop
-            preload="auto"
-            controls={false}
-          >
-            <source src="/charm.mov" type="video/mp4" />
-          </video>
-        </div>
+    <div className={styles.container} ref={containerRef}>
+      <div className={styles.video} ref={videoContainerRef}>
+        <video 
+          ref={videoRef}
+          autoPlay
+          playsInline
+          muted
+          loop
+          preload="auto"
+          controls={false}
+        >
+          <source src="/charm.mov" type="video/mp4" />
+        </video>
       </div>
-
-      {videoModal.isOpen && (
-        <div className="fixed inset-0 flex items-center justify-center z-[1000] backdrop-blur-sm" onClick={onClose}>
-          <div className={styles.video} ref={videoContainerRef}>
-            <button 
-              className="absolute top-4 right-4 text-2xl text-white z-10 hover:opacity-80"
-              onClick={onClose}
-            >
-              ×
-            </button>
-            <iframe
-              className="w-full h-full object-cover"
-              src={`https://www.youtube.com/embed/${videoModal.videoId}?autoplay=1`}
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            />
-          </div>
-        </div>
-      )}
-    </>
+    </div>
   )
 } 

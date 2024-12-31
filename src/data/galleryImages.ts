@@ -10,7 +10,7 @@ export const galleryImages: GalleryImage[] = [
     title: "Netflix Christmas Halftime Show",
     description:
       "Captivating choreography for Beyoncé's spectacular holiday halftime show on Netflix.",
-    videoId: "placeholder-beyonce-christmas",
+    videoId: "https://www.youtube.com/watch?v=QO0SSraNKus",
   },
   {
     src: '/gallery/kendrick_lamar.jpg',
@@ -18,7 +18,7 @@ export const galleryImages: GalleryImage[] = [
     artist: "Kendrick Lamar",
     title: "Squabble Up",
     description: "Innovative choreography and movement direction for Kendrick Lamar's dynamic performance.",
-    videoId: "placeholder-squabble-up",
+    videoId: "https://www.youtube.com/watch?v=fuV4yQWdn_4",
   },
   {
     src: '/gallery/meghan_trainor_timeless.jpg',
@@ -27,7 +27,7 @@ export const galleryImages: GalleryImage[] = [
     title: "I Am Your Mother",
     description:
       "Directed by Charm La'Donna, this video combines bold visuals with memorable choreography.",
-    videoId: "placeholder-mother",
+    videoId: "https://www.youtube.com/watch?v=9coyY-SPIXU",
   },
   {
     src: '/gallery/rosalia_motomami.jpg',
@@ -36,7 +36,7 @@ export const galleryImages: GalleryImage[] = [
     title: "Motomami World Tour",
     description:
       "Dynamic movement direction and stage design for Rosalía's global tour.",
-    videoId: "placeholder-motomami",
+    videoId: "https://www.youtube.com/watch?v=ZgxqaghK0AY",
   },
   {
     src: '/gallery/the_weeknd_superbowl.jpg',
@@ -45,7 +45,7 @@ export const galleryImages: GalleryImage[] = [
     title: "Super Bowl LV Halftime Show",
     description:
       "Creative direction and choreography for The Weeknd's iconic Super Bowl LV Halftime Show performance.",
-    videoId: "placeholder-superbowl",
+    videoId: "https://www.youtube.com/watch?v=9rhadTURsrw",
   },
   {
     src: '/gallery/salena_gomez_look_at_her_now.jpg',
@@ -54,7 +54,7 @@ export const galleryImages: GalleryImage[] = [
     title: "Look at Her Now",
     description:
       "Sleek and contemporary choreography for Selena Gomez's hit music video.",
-    videoId: "placeholder-look-at-her-now",
+    videoId: "https://www.youtube.com/watch?v=8u-_64S7plI",
   },
   {
     src: '/gallery/dua_lipa_dance_the_night.jpg',
@@ -63,7 +63,7 @@ export const galleryImages: GalleryImage[] = [
     title: "Houdini",
     description:
       "Enchanting choreography for Dua Lipa's magical music video experience.",
-    videoId: "placeholder-houdini",
+    videoId: "https://www.youtube.com/watch?v=suAR1PYFNYA",
   },
   {
     src: '/gallery/rich_spirit.jpg',
@@ -72,7 +72,7 @@ export const galleryImages: GalleryImage[] = [
     title: "Rich Spirit",
     description:
       "Bold and innovative choreography for Kendrick Lamar's commanding stage presence.",
-    videoId: "placeholder-rich-spirit",
+    videoId: "https://www.youtube.com/watch?v=toBTPGfurLc",
   },
   {
     src: '/gallery/nas.jpg',
@@ -81,7 +81,7 @@ export const galleryImages: GalleryImage[] = [
     title: "Grammy Awards 2022",
     description:
       "Impactful stage design and choreography for Nas's commanding Grammy appearance.",
-    videoId: "placeholder-grammys22",
+    videoId: "https://www.youtube.com/watch?v=mjqro0HMUxc",
   },
   {
     src: '/gallery/ava_max_my_head_my_heart.jpg',
@@ -90,7 +90,7 @@ export const galleryImages: GalleryImage[] = [
     title: "My Head & My Heart",
     description:
       "Directed by Charm La'Donna, showcasing bold visuals and electrifying choreography.",
-    videoId: "placeholder-my-head-my-heart",
+    videoId: "https://www.youtube.com/watch?v=w8mBplMtwJ8",
   },
   {
     src: '/gallery/apple_music_harry_styles.jpg',
@@ -99,7 +99,7 @@ export const galleryImages: GalleryImage[] = [
     title: "Harry Styles Live Performance",
     description:
       "Innovative collaboration with Harry Styles for Apple Music, blending tech and artistry.",
-    videoId: "placeholder-apple",
+    videoId: "https://www.youtube.com/watch?v=LoMTK0HxPsA",
   },
   {
     src: '/gallery/lululemon_dance_pants.jpg',
@@ -108,7 +108,7 @@ export const galleryImages: GalleryImage[] = [
     title: "Dance Pants Campaign",
     description:
       "Dynamic movement direction for Lululemon's iconic campaign, showcasing flexibility and style.",
-    videoId: "placeholder-lululemon",
+    videoId: "https://campaignbuzz.io/email/lululemon.com/c1d55b53-6aaf-438a-9819-1c80ea019278",
   },
   {
     src: '/gallery/roddy_ricch.jpg',
@@ -117,7 +117,7 @@ export const galleryImages: GalleryImage[] = [
     title: "BET Awards",
     description:
       "Creative direction for Roddy Ricch's standout performance at the BET Awards.",
-    videoId: "placeholder-roddy-rich-bet",
+    videoId: "https://www.youtube.com/watch?v=ieymhnf7oHg",
   },
   {
     src: '/gallery/lil_baby.jpg',
@@ -126,7 +126,7 @@ export const galleryImages: GalleryImage[] = [
     title: "Back Outside Tour",
     description:
       "High-energy routines for Lil Baby's electrifying Back Outside Tour, elevating modern hip-hop performance.",
-    videoId: "placeholder-lil-baby-live",
+    videoId: "https://www.youtube.com/watch?v=Ie36HfFZPm0",
   },
   {
     src: '/gallery/glastonberry.jpg',
@@ -135,7 +135,7 @@ export const galleryImages: GalleryImage[] = [
     title: "Glastonbury Festival",
     description:
       "Mesmerizing choreography and stage design for Kendrick Lamar's Glastonbury performance.",
-    videoId: "placeholder-glastonbury",
+    videoId: "https://vk.com/video-100153356_456240489",
   },
   {
     src: '/gallery/bad_bunny_baticano.jpg',
@@ -144,7 +144,7 @@ export const galleryImages: GalleryImage[] = [
     title: "Baticano",
     description:
       "Performance direction highlighting Bad Bunny's charismatic energy and unique artistry.",
-    videoId: "placeholder-baticano",
+    videoId: "https://www.youtube.com/watch?v=QCqc3k0Tzbs",
   },
   {
     src: '/gallery/the_perfect_couple_netflix.jpg',
@@ -153,6 +153,6 @@ export const galleryImages: GalleryImage[] = [
     title: "The Perfect Couple",
     description:
       "Choreography for Netflix's The Perfect Couple, blending storytelling and dance.",
-    videoId: "placeholder-perfect-couple",
+    videoId: "https://www.youtube.com/watch?v=AdpQuXTWup0",
   },
 ];

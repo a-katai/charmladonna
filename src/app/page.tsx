@@ -13,44 +13,19 @@ import { GalleryImage } from '@/types/gallery'
 import styles from '@/styles/Gallery.module.css'
 
 export default function Home() {
-  const [videoModal, setVideoModal] = useState<{
-    isOpen: boolean;
-    videoId: string;
-  }>({
-    isOpen: false,
-    videoId: ''
-  })
-
   const [isAboutOpen, setIsAboutOpen] = useState(false)
   const [isCreditsOpen, setIsCreditsOpen] = useState(false)
   const [isContactOpen, setIsContactOpen] = useState(false)
 
   const handleImageClick = (image: GalleryImage) => {
-    if (image.videoId && !image.externalLink) {
-      setVideoModal({
-        isOpen: true,
-        videoId: image.videoId
-      })
-    } else if (image.externalLink) {
-      window.open(image.externalLink || `https://www.youtube.com/watch?v=${image.videoId}`, '_blank')
-    }
-  }
-
-  const closeVideoModal = () => {
-    setVideoModal({
-      isOpen: false,
-      videoId: ''
-    })
+    window.open(image.videoId, '_blank')
   }
 
   return (
     <ClientLayout>
       <main className="w-full overflow-x-hidden">
         <Header />
-        <Hero 
-          videoModal={videoModal}
-          onClose={closeVideoModal}
-        />
+        <Hero />
         <Gallery 
           images={galleryImages} 
           onImageClick={handleImageClick}
