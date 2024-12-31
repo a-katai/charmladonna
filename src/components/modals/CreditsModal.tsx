@@ -25,7 +25,7 @@ export default function CreditsModal({ isOpen, onClose }: ModalProps) {
               <p>O2 Commercial - Dua Lipa - Choreographer</p>
               <p>Sketchers Commercial - Choreographer</p>
               <p>Zara "Origins" brand commercial - Choreography</p>
-          </div>
+            </div>
           </div>
 
           {/* Television/Film */}
@@ -57,7 +57,7 @@ export default function CreditsModal({ isOpen, onClose }: ModalProps) {
               <p>Nashville Squares</p>
               <p>Pretty Little Liars Choreographer</p>
               <p>Run Sweetheart Run (Feature Film)</p>
-          </div>
+            </div>
           </div>
 
           {/* Live Performances */}
@@ -97,7 +97,7 @@ export default function CreditsModal({ isOpen, onClose }: ModalProps) {
               <p>Kendrick Lamar "Damn" Tour</p>
               <p>Lil Baby - "Back Outside" Tour</p>
             </div>
-            </div>
+          </div>
 
           {/* Music Videos */}
           <div className={styles.section}>
@@ -106,6 +106,7 @@ export default function CreditsModal({ isOpen, onClose }: ModalProps) {
               <p>Kendrick Lamar - "Squabble Up" (Choreographer)</p>
               <p>Ava Max - "My Head My Heart" (Director/Choreographer)</p>
               <p>Bad Bunny - "Baticano" (Choreographer)</p>
+              <p>Bebe Rexha/Doja Cat - "Music Video" (Choreographer)</p>
               <p>BIA - "I'm That Bitch" (Choreographer)</p>
               <p>BIA - "Lights Out" (Movement Direction)</p>
               <p>Coco Jones - "Here We Go" (Choreographer)</p>
@@ -114,10 +115,26 @@ export default function CreditsModal({ isOpen, onClose }: ModalProps) {
               <p>Dua Lipa - "Training Season" (Choreographer)</p>
               <p>Dua Lipa - "Illusions" (Choreographer)</p>
               <p>Kendrick Lamar - "Not Like Us" (Choreographer/Producer)</p>
-              <p>Meghan Trainor - "I Am Your Mother" (with Kris Jenner)</p>
+              <p>Meghan Trainor - "All About That Bass" (Choreographer)</p>
+              <p>Meghan Trainor - "I’m A Lady" (Choreographer)</p>
+              <p>Meghan Trainor ft. T-Pain - "Been Like This" (Choreographer)</p>
+              <p>Meghan Trainor - "Here We Go" (Choreographer)</p>
+              <p>Meghan Trainor - "To The Moon" (Choreographer)</p>
+              <p>Meghan Trainor & Kris Jenner - "I Am Your Mother"</p>
               <p>Rosalia - "TUYA" (Movement Direction)</p>
+              <p>Rosalia - "Malamente" (Choreographer)</p>
+              <p>Rosalia - "Yo x Ti, Tu x Mi" (Choreographer)</p>
+              <p>Rosalia - "A Pale" (Choreographer)</p>
+              <p>Rosalia - "Di Mi Nombre" (Choreographer)</p>
+              <p>Rosalia - "Pienso Tu Mira" (Choreographer)</p>
+              <p>Rosalia - "Con Altura" (Choreographer)</p>
               <p>Selena Gomez - "Look At Her Now" (Choreographer)</p>
-              <p>Shenseea ft. MTS - "Lick" (Music Video)</p>
+              <p>Selena Gomez - "Baila Conmigo" (Choreographer)</p>
+              <p>Selena Gomez - "Me And My Girls" (Choreographer)</p>
+              <p>Selena Gomez - "De Una Vez" (Choreographer)</p>
+              <p>Selena Gomez - "Rare" (Choreographer)</p>
+              <p>Selena Gomez - "Come And Get It" (Choreographer)</p>
+              <p>Shenseea ft. MTS - "Lick" (Choreographer)</p>
               <p>Tyga & Chris Brown - "Nasty" (Movement Direction)</p>
               <p>Tyga - "Bops Going Brazy" (Choreographer)</p>
             </div>
@@ -127,4 +144,4 @@ export default function CreditsModal({ isOpen, onClose }: ModalProps) {
       </div>
     </div>
   )
-} 
+}

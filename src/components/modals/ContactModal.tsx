@@ -38,14 +38,14 @@ export default function ContactModal({ isOpen, onClose }: ModalProps) {
             Send Message
           </button>
         </form>
-        <div className="flex justify-center gap-8 mt-8">
+        <div className="flex justify-center gap-6 mt-6">
           <a 
             href="https://www.instagram.com/charmladonna" 
             target="_blank" 
             rel="noopener noreferrer"
             className="text-white hover:opacity-70 transition-opacity"
           >
-            <FaInstagram size={20} />
+            <FaInstagram size={18} />
           </a>
           <a 
             href="https://twitter.com/CharmLaDonna" 
@@ -53,7 +53,7 @@ export default function ContactModal({ isOpen, onClose }: ModalProps) {
             rel="noopener noreferrer"
             className="text-white hover:opacity-70 transition-opacity"
           >
-            <FaXTwitter size={18} />
+            <FaXTwitter size={16} />
           </a>
           <a 
             href="https://www.tiktok.com/@charmladonna" 
@@ -61,7 +61,7 @@ export default function ContactModal({ isOpen, onClose }: ModalProps) {
             rel="noopener noreferrer"
             className="text-white hover:opacity-70 transition-opacity"
           >
-            <FaTiktok size={18} />
+            <FaTiktok size={16} />
           </a>
           <a 
             href="https://www.youtube.com/@CharmLaDonna" 
@@ -69,7 +69,7 @@ export default function ContactModal({ isOpen, onClose }: ModalProps) {
             rel="noopener noreferrer"
             className="text-white hover:opacity-70 transition-opacity"
           >
-            <FaYoutube size={20} />
+            <FaYoutube size={18} />
           </a>
         </div>
       </div>

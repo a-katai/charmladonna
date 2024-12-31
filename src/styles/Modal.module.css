@@ -99,69 +99,45 @@
 
 @media (max-width: 768px) {
   .overlay {
-    padding: 24px;
+    padding: 16px;
   }
 
   .content {
     width: 100%;
     height: auto;
-    max-height: 85vh;
-    padding: 24px;
-    margin: 16px;
+    max-height: 90vh;
+    padding: 20px;
+    margin: 0;
+    border-radius: 20px;
   }
 
-  .directory {
-    padding: 64px 24px 24px;
-    height: 100%;
-    overflow-y: auto;
-  }
-
-  .artist {
-    margin-bottom: 24px;
-    padding-right: 0;
+  .formGroup {
+    margin-bottom: 12px;
   }
 
   .formGroup input,
   .formGroup textarea {
     font-size: 16px;
-    padding: 16px;
+    padding: 12px;
+  }
+
+  .formGroup textarea {
+    min-height: 80px;
   }
 
   .submitButton {
-    padding: 16px;
+    padding: 12px;
     font-size: 16px;
-  }
-
-  .close {
-    top: 16px;
-    right: 16px;
+    margin-top: 4px;
   }
 
   .formTitle {
-    margin-bottom: 24px;
+    font-size: 20px;
+    margin-bottom: 16px;
   }
 
-  .list li {
-    margin-bottom: 6px;
-  }
-
-  .section {
-    margin-bottom: 32px;
-  }
-
-  .artistName {
-    font-size: 16px;
-    margin-bottom: 12px;
-  }
-
-  .list {
-    gap: 6px;
-  }
-
-  .list p {
-    font-size: 14px;
-    line-height: 1.4;
-    color: #333;
+  .form {
+    margin-bottom: 16px;
   }
 }
 
