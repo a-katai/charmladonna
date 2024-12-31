@@ -13,7 +13,7 @@ export const galleryImages: GalleryImage[] = [
     videoId: "https://www.youtube.com/watch?v=QO0SSraNKus",
   },
   {
-    src: '/gallery/kendrick_lamar2.jpg',
+    src: '/gallery/kendrick_lamar.jpg',
     category: "Music Video",
     artist: "Kendrick Lamar",
     title: "Squabble Up",
