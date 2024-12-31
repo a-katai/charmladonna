@@ -6,6 +6,7 @@ export interface GalleryImage {
   description: string;
   videoId: string;
   externalLink?: string;
+  alt: string;
 }
 
 export interface GalleryProps {

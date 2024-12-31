@@ -34,7 +34,7 @@ export default function Gallery({ images, onImageClick }: GalleryProps) {
               </div>
               <Image 
                 src={image.src} 
-                alt={image.title}
+                alt={image.alt || `${image.artist ? `${image.artist} - ` : ''}${image.title} - ${image.description}`}
                 width={500}
                 height={700}
                 className="object-cover"
