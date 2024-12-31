@@ -45,7 +45,7 @@ export default function Home() {
 
   return (
     <ClientLayout>
-      <main>
+      <main className="w-full overflow-x-hidden">
         <Header />
         <Hero 
           videoModal={videoModal}
