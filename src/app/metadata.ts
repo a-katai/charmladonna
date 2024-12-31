@@ -27,6 +27,8 @@ export const metadata: Metadata = {
     title: "Charm La'Donna",
     description: "Charm La'Donna, the creative force behind Beyoncé, Kendrick Lamar, and more. Dive into her iconic career in dance and mentorship.",
     images: ['/gallery/lululemon_dance_pants.jpg'],
+    site: '@CharmLaDonna',
+    creator: '@CharmLaDonna',
   },
   viewport: {
     width: 'device-width',
