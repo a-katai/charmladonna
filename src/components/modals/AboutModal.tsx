@@ -2,7 +2,6 @@
 
 import { ModalProps } from '@/types/modal'
 import styles from '@/styles/Modal.module.css'
-import { FaInstagram, FaTiktok, FaYoutube, FaXTwitter } from 'react-icons/fa6'
 
 export default function AboutModal({ isOpen, onClose }: ModalProps) {
   if (!isOpen) return null
@@ -30,40 +29,6 @@ export default function AboutModal({ isOpen, onClose }: ModalProps) {
               turn. Beyond the stage, Charm uplifts the next generation through mentorship, classes, donations, 
               fundraisers, and more—proving that her impact extends far beyond the spotlight.
             </p>
-            <div className="flex gap-6 mt-8">
-              <a 
-                href="https://www.instagram.com/charmladonna" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="text-white hover:opacity-70 transition-opacity"
-              >
-                <FaInstagram size={24} />
-              </a>
-              <a 
-                href="https://twitter.com/CharmLaDonna" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="text-white hover:opacity-70 transition-opacity"
-              >
-                <FaXTwitter size={22} />
-              </a>
-              <a 
-                href="https://www.tiktok.com/@charmladonna" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="text-white hover:opacity-70 transition-opacity"
-              >
-                <FaTiktok size={22} />
-              </a>
-              <a 
-                href="https://www.youtube.com/@CharmLaDonna" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="text-white hover:opacity-70 transition-opacity"
-              >
-                <FaYoutube size={26} />
-              </a>
-            </div>
           </div>
         </div>
       </div>

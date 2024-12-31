@@ -104,10 +104,10 @@
 
   .content {
     width: 100%;
-    height: 75vh;
-    border-radius: 25px;
-    padding: 0;
-    margin: auto;
+    height: auto;
+    max-height: 85vh;
+    padding: 24px;
+    margin: 16px;
   }
 
   .directory {

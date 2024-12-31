@@ -25,7 +25,7 @@ export default function CreditsModal({ isOpen, onClose }: ModalProps) {
               <p>O2 Commercial - Dua Lipa - Choreographer</p>
               <p>Sketchers Commercial - Choreographer</p>
               <p>Zara "Origins" brand commercial - Choreography</p>
-            </div>
+          </div>
           </div>
 
           {/* Television/Film */}
@@ -57,7 +57,7 @@ export default function CreditsModal({ isOpen, onClose }: ModalProps) {
               <p>Nashville Squares</p>
               <p>Pretty Little Liars Choreographer</p>
               <p>Run Sweetheart Run (Feature Film)</p>
-            </div>
+          </div>
           </div>
 
           {/* Live Performances */}
@@ -97,7 +97,7 @@ export default function CreditsModal({ isOpen, onClose }: ModalProps) {
               <p>Kendrick Lamar "Damn" Tour</p>
               <p>Lil Baby - "Back Outside" Tour</p>
             </div>
-          </div>
+            </div>
 
           {/* Music Videos */}
           <div className={styles.section}>
