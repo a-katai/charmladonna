@@ -58,7 +58,7 @@ export default function ContactModal({ isOpen, onClose }: ModalProps) {
         <button className={styles.close} onClick={onClose}>×</button>
         <div className={styles.directory}>
           <div className={`${styles.artist} ${styles.formContainer}`}>
-            <h2 className={styles.artistName}></h2>
+            <h2 className={styles.formTitle}>Contact</h2>
             <form onSubmit={handleSubmit} className={styles.form}>
               <div className={styles.formGroup}>
                 <input
