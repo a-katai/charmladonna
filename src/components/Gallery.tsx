@@ -4,8 +4,15 @@ import { FaChevronLeft, FaChevronRight } from 'react-icons/fa'
 import Image from 'next/image'
 import { GalleryProps, GalleryImage } from '@/types/gallery'
 import styles from '@/styles/Gallery.module.css'
+import { useEffect, useState } from 'react'
 
 export default function Gallery({ images, onImageClick }: GalleryProps) {
+  const [isClient, setIsClient] = useState(false)
+
+  useEffect(() => {
+    setIsClient(true)
+  }, [])
+
   const scrollGallery = (direction: 'left' | 'right'): void => {
     const gallery = document.querySelector(`.${styles.track}`)
     const scrollAmount = 400
@@ -15,6 +22,10 @@ export default function Gallery({ images, onImageClick }: GalleryProps) {
         behavior: 'smooth'
       })
     }
+  }
+
+  if (!isClient) {
+    return null // or a loading state
   }
 
   return (
