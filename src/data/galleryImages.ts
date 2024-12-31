@@ -39,6 +39,15 @@ export const galleryImages: GalleryImage[] = [
     videoId: "https://www.youtube.com/watch?v=AdpQuXTWup0",
   },
   {
+    src: '/gallery/zara.jpg',
+    category: "Brand Campaign",
+    artist: "Zara",
+    title: "Origins Campaign",
+    description:
+      "Innovative movement direction and choreography for Zara's Origins campaign, merging fashion with dynamic performance.",
+    videoId: "https://www.instagram.com/p/C1H-66bOaNj/?igsh=NTc4MTIwNjQ2YQ%3D%3D&img_index=2",
+  },
+  {
     src: '/gallery/the_weeknd_superbowl.jpg',
     category: "Live Performance",
     artist: "The Weeknd",
@@ -154,15 +163,6 @@ export const galleryImages: GalleryImage[] = [
     description:
       "Groundbreaking choreography and stage direction for Kendrick Lamar's monumental world tour.",
     videoId: "https://www.youtube.com/watch?v=2XuYEYkTyk0",
-  },
-  {
-    src: '/gallery/zara.jpg',
-    category: "Brand Campaign",
-    artist: "Zara",
-    title: "Origins Campaign",
-    description:
-      "Innovative movement direction and choreography for Zara's Origins campaign, merging fashion with dynamic performance.",
-    videoId: "https://www.youtube.com/watch?v=ieymhnf7oHg",
   },
   {
     src: '/gallery/rosalia_con_altura.jpg',
