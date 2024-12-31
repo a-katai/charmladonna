@@ -11,66 +11,68 @@ export default function ContactModal({ isOpen, onClose }: ModalProps) {
     <div className={styles.overlay} onClick={onClose}>
       <div className={styles.content} onClick={e => e.stopPropagation()}>
         <button className={styles.close} onClick={onClose}>×</button>
-        <h2 className={styles.formTitle}>Contact</h2>
-        <form className={styles.form}>
-          <div className={styles.formGroup}>
-            <input 
-              type="text" 
-              placeholder="Name" 
-              className={styles.input}
-            />
+        <div className={styles.directory}>
+          <h2 className={styles.formTitle}>Contact</h2>
+          <form className={styles.form}>
+            <div className={styles.formGroup}>
+              <input 
+                type="text" 
+                placeholder="Name" 
+                className={styles.input}
+              />
+            </div>
+            <div className={styles.formGroup}>
+              <input 
+                type="email" 
+                placeholder="Email" 
+                className={styles.input}
+              />
+            </div>
+            <div className={styles.formGroup}>
+              <textarea 
+                placeholder="Message" 
+                className={styles.textarea}
+                rows={3}
+              />
+            </div>
+            <button type="submit" className={styles.submitButton}>
+              Send Message
+            </button>
+          </form>
+          <div className="flex justify-center gap-6 mt-4">
+            <a 
+              href="https://www.instagram.com/charmladonna" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-white hover:opacity-70 transition-opacity"
+            >
+              <FaInstagram size={18} />
+            </a>
+            <a 
+              href="https://twitter.com/CharmLaDonna" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-white hover:opacity-70 transition-opacity"
+            >
+              <FaXTwitter size={16} />
+            </a>
+            <a 
+              href="https://www.tiktok.com/@charmladonna" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-white hover:opacity-70 transition-opacity"
+            >
+              <FaTiktok size={16} />
+            </a>
+            <a 
+              href="https://www.youtube.com/@CharmLaDonna" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-white hover:opacity-70 transition-opacity"
+            >
+              <FaYoutube size={18} />
+            </a>
           </div>
-          <div className={styles.formGroup}>
-            <input 
-              type="email" 
-              placeholder="Email" 
-              className={styles.input}
-            />
-          </div>
-          <div className={styles.formGroup}>
-            <textarea 
-              placeholder="Message" 
-              className={styles.textarea}
-              rows={3}
-            />
-          </div>
-          <button type="submit" className={styles.submitButton}>
-            Send Message
-          </button>
-        </form>
-        <div className="flex justify-center gap-6 mt-6">
-          <a 
-            href="https://www.instagram.com/charmladonna" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="text-white hover:opacity-70 transition-opacity"
-          >
-            <FaInstagram size={18} />
-          </a>
-          <a 
-            href="https://twitter.com/CharmLaDonna" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="text-white hover:opacity-70 transition-opacity"
-          >
-            <FaXTwitter size={16} />
-          </a>
-          <a 
-            href="https://www.tiktok.com/@charmladonna" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="text-white hover:opacity-70 transition-opacity"
-          >
-            <FaTiktok size={16} />
-          </a>
-          <a 
-            href="https://www.youtube.com/@CharmLaDonna" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="text-white hover:opacity-70 transition-opacity"
-          >
-            <FaYoutube size={18} />
-          </a>
         </div>
       </div>
     </div>

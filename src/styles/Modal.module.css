@@ -105,10 +105,24 @@
   .content {
     width: 100%;
     height: auto;
-    max-height: 90vh;
-    padding: 20px;
+    max-height: 85vh;
+    padding: 0;
     margin: 0;
     border-radius: 20px;
+  }
+
+  .directory {
+    padding: 24px;
+    height: auto;
+  }
+
+  .formTitle {
+    font-size: 20px;
+    margin-bottom: 16px;
+  }
+
+  .form {
+    margin: 0 0 16px 0;
   }
 
   .formGroup {
@@ -123,6 +137,7 @@
 
   .formGroup textarea {
     min-height: 80px;
+    max-height: 120px;
   }
 
   .submitButton {
@@ -131,13 +146,11 @@
     margin-top: 4px;
   }
 
-  .formTitle {
-    font-size: 20px;
-    margin-bottom: 16px;
-  }
-
-  .form {
-    margin-bottom: 16px;
+  .close {
+    top: 12px;
+    right: 12px;
+    font-size: 24px;
+    padding: 4px;
   }
 }
 
