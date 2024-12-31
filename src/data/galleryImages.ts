@@ -30,13 +30,13 @@ export const galleryImages: GalleryImage[] = [
     videoId: "https://www.youtube.com/watch?v=9coyY-SPIXU",
   },
   {
-    src: '/gallery/rosalia_motomami.jpg',
-    category: "Tour",
-    artist: "Rosalía",
-    title: "Motomami World Tour",
+    src: '/gallery/the_perfect_couple_netflix.jpg',
+    category: "Television",
+    artist: "Netflix",
+    title: "The Perfect Couple",
     description:
-      "Dynamic movement direction and stage design for Rosalía's global tour.",
-    videoId: "https://www.youtube.com/watch?v=ZgxqaghK0AY",
+      "Choreography for Netflix's The Perfect Couple, blending storytelling and dance.",
+    videoId: "https://www.youtube.com/watch?v=AdpQuXTWup0",
   },
   {
     src: '/gallery/the_weeknd_superbowl.jpg',
@@ -60,10 +60,10 @@ export const galleryImages: GalleryImage[] = [
     src: '/gallery/dua_lipa_dance_the_night.jpg',
     category: "Music Video",
     artist: "Dua Lipa",
-    title: "Houdini",
+    title: "Dance The Night",
     description:
-      "Enchanting choreography for Dua Lipa's magical music video experience.",
-    videoId: "https://www.youtube.com/watch?v=suAR1PYFNYA",
+      "Enchanting choreography for Dua Lipa's Barbie movie music video experience.",
+    videoId: "https://www.youtube.com/watch?v=8EJ-vZyBzOQ",
   },
   {
     src: '/gallery/rich_spirit.jpg',
@@ -94,11 +94,11 @@ export const galleryImages: GalleryImage[] = [
   },
   {
     src: '/gallery/apple_music_harry_styles.jpg',
-    category: "Brand Campaign",
-    artist: "Apple",
-    title: "Harry Styles Live Performance",
+    category: "Commercial",
+    artist: "Harry Styles",
+    title: "Apple Music Campaign",
     description:
-      "Innovative collaboration with Harry Styles for Apple Music, blending tech and artistry.",
+      "Innovative commercial collaboration with Harry Styles for Apple Music, blending tech and artistry.",
     videoId: "https://www.youtube.com/watch?v=LoMTK0HxPsA",
   },
   {
@@ -126,7 +126,7 @@ export const galleryImages: GalleryImage[] = [
     title: "Back Outside Tour",
     description:
       "High-energy routines for Lil Baby's electrifying Back Outside Tour, elevating modern hip-hop performance.",
-    videoId: "https://www.youtube.com/watch?v=Ie36HfFZPm0",
+    videoId: "https://www.youtube.com/watch?v=mPS50RtktTQ",
   },
   {
     src: '/gallery/glastonberry.jpg',
@@ -138,6 +138,42 @@ export const galleryImages: GalleryImage[] = [
     videoId: "https://vk.com/video-100153356_456240489",
   },
   {
+    src: '/gallery/houdini.jpg',
+    category: "Music Video",
+    artist: "Dua Lipa",
+    title: "Houdini",
+    description:
+      "Mesmerizing choreography for Dua Lipa's magical music video experience.",
+    videoId: "https://www.youtube.com/watch?v=suAR1PYFNYA",
+  },
+  {
+    src: '/gallery/big_stepper.jpg',
+    category: "Live Performance",
+    artist: "Kendrick Lamar",
+    title: "Big Steppers Tour",
+    description:
+      "Groundbreaking choreography and stage direction for Kendrick Lamar's monumental world tour.",
+    videoId: "https://www.youtube.com/watch?v=2XuYEYkTyk0",
+  },
+  {
+    src: '/gallery/zara.jpg',
+    category: "Brand Campaign",
+    artist: "Zara",
+    title: "Origins Campaign",
+    description:
+      "Innovative movement direction and choreography for Zara's Origins campaign, merging fashion with dynamic performance.",
+    videoId: "https://www.youtube.com/watch?v=ieymhnf7oHg",
+  },
+  {
+    src: '/gallery/rosalia_con_altura.jpg',
+    category: "Music Video",
+    artist: "Rosalía",
+    title: "Con Altura",
+    description:
+      "Dynamic choreography and creative direction for Rosalía's chart-topping collaboration.",
+    videoId: "https://www.youtube.com/watch?v=p7bfOZek9t4",
+  },
+  {
     src: '/gallery/bad_bunny_baticano.jpg',
     category: "Music Video",
     artist: "Bad Bunny",
@@ -145,14 +181,5 @@ export const galleryImages: GalleryImage[] = [
     description:
       "Performance direction highlighting Bad Bunny's charismatic energy and unique artistry.",
     videoId: "https://www.youtube.com/watch?v=QCqc3k0Tzbs",
-  },
-  {
-    src: '/gallery/the_perfect_couple_netflix.jpg',
-    category: "Television",
-    artist: "Netflix",
-    title: "The Perfect Couple",
-    description:
-      "Choreography for Netflix's The Perfect Couple, blending storytelling and dance.",
-    videoId: "https://www.youtube.com/watch?v=AdpQuXTWup0",
   },
 ];
