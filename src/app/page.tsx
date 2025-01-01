@@ -8,28 +8,18 @@ import Gallery from '@/components/Gallery'
 import AboutModal from '@/components/modals/AboutModal'
 import CreditsModal from '@/components/modals/CreditsModal'
 import ContactModal from '@/components/modals/ContactModal'
-import { galleryImages } from '@/data/galleryImages'
-import { GalleryImage } from '@/types/gallery'
-import styles from '@/styles/Gallery.module.css'
 
 export default function Home() {
   const [isAboutOpen, setIsAboutOpen] = useState(false)
   const [isCreditsOpen, setIsCreditsOpen] = useState(false)
   const [isContactOpen, setIsContactOpen] = useState(false)
 
-  const handleImageClick = (image: GalleryImage) => {
-    window.open(image.videoId, '_blank')
-  }
-
   return (
     <ClientLayout>
       <main className="w-full overflow-x-hidden">
         <Header />
         <Hero />
-        <Gallery 
-          images={galleryImages} 
-          onImageClick={handleImageClick}
-        />
+        <Gallery />
       </main>
       <footer className="w-full">
         <div className="w-[85%] mx-auto">
