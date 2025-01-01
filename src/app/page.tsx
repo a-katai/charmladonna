@@ -16,7 +16,7 @@ export default function Home() {
 
   return (
     <ClientLayout>
-      <main className="w-full overflow-x-hidden">
+      <main>
         <Header />
         <Hero />
         <Gallery />
