@@ -14,9 +14,9 @@
     font-weight: 700;
     color: #000;
     text-align: left;
-    padding-left: calc(7.5% + 24px);
-    margin-left: 0;
-    margin-right: 0;
+    padding-left: 0;
+    margin-left: auto;
+    margin-right: auto;
   }
   
   .track {
@@ -24,11 +24,9 @@
     gap: 24px;
     overflow-x: auto;
     position: relative;
-    padding: 24px;
-    padding-left: calc(7.5% + 24px);
-    padding-right: calc(7.5% + 24px);
-    margin: -24px;
-    width: calc(100% + 48px);
+    padding: 24px 0;
+    width: calc(100% + (100% - 85%));
+    margin-left: 7.5%;
     -webkit-overflow-scrolling: touch;
     scrollbar-width: none;
     scroll-snap-type: x mandatory;
@@ -135,9 +133,9 @@
   
   @media (max-width: 768px) {
     .title {
-      margin: 40px 0 40px;
+      margin: 40px auto;
       font-size: 32px;
-      padding-left: calc(7.5% + 24px);
+      padding-left: 0;
     }
     
     .track {
@@ -145,11 +143,9 @@
       gap: 24px;
       overflow-x: auto;
       position: relative;
-      padding: 24px;
-      padding-left: calc(7.5% + 24px);
-      padding-right: calc(7.5% + 24px);
-      margin: -24px;
-      width: calc(100% + 48px);
+      padding: 24px 0;
+      width: calc(100% + 7.5%);
+      margin-left: 7.5%;
       scroll-snap-type: x mandatory;
       scroll-behavior: smooth;
       -webkit-overflow-scrolling: touch;

@@ -16,7 +16,7 @@
 .content {
   position: relative;
   width: 100%;
-  max-width: 700px;
+  max-width: 900px;
   height: auto;
   min-height: 300px;
   max-height: 85vh;
@@ -255,11 +255,12 @@
   }
 
   .content {
-    min-height: 60vh;
+    max-width: 100%;
+    margin: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
     max-height: 90vh;
-    padding: 2rem 1.5rem;
-    border-radius: 20px 20px 0 0;
-    margin-bottom: 0;
+    padding: 2rem;
   }
 
   .close {
