@@ -14,6 +14,7 @@ export default function ContactModal({ isOpen, onClose }: ModalProps) {
         <div className={styles.content} onClick={e => e.stopPropagation()}>
           <button className={styles.close} onClick={onClose}>×</button>
           <div className={styles.directory}>
+            <h2 className={styles.artistName}>Contact</h2>
             <form className={styles.form}>
               <div className={styles.formGroup}>
                 <input type="text" placeholder="Name" />
@@ -22,7 +23,7 @@ export default function ContactModal({ isOpen, onClose }: ModalProps) {
                 <input type="email" placeholder="Email" />
               </div>
               <div className={styles.formGroup}>
-                <textarea placeholder="Message"></textarea>
+                <textarea placeholder="Message" rows={4}></textarea>
               </div>
               <button type="submit" className={styles.submitButton}>Send Message</button>
             </form>

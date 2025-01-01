@@ -27,6 +27,7 @@
     padding: 24px 0;
     width: calc(100% + (100% - 85%));
     margin-left: 7.5%;
+    padding-right: 7.5%;
     -webkit-overflow-scrolling: touch;
     scrollbar-width: none;
     scroll-snap-type: x mandatory;
@@ -146,6 +147,7 @@
       padding: 24px 0;
       width: calc(100% + 7.5%);
       margin-left: 7.5%;
+      padding-right: 7.5%;
       scroll-snap-type: x mandatory;
       scroll-behavior: smooth;
       -webkit-overflow-scrolling: touch;
