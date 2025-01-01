@@ -1,0 +1,6 @@
+# Allow all web crawlers
+User-agent: *
+Allow: /
+
+# Sitemap not needed for single page application
+# Sitemap: https://charmladonna.com/sitemap.xml 

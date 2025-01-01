@@ -54,7 +54,7 @@ export default function Home() {
             </button>
           </div>
           <div className="flex justify-between items-center py-4 border-t border-gray-100">
-            <div className="text-[11px] text-gray-400">© 2025 Charm LaDonna. All rights reserved.</div>
+            <div className="text-[11px] text-gray-400">© 2025 Charm La'Donna. All rights reserved.</div>
             <div className="hidden sm:block text-[11px] text-gray-400">Los Angeles, USA</div>
           </div>
         </div>

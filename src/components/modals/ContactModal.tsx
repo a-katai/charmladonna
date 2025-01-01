@@ -1,7 +1,7 @@
 'use client'
 
 import { ModalProps } from '@/types/modal'
-import { FaInstagram, FaTiktok, FaYoutube, FaXTwitter } from 'react-icons/fa6'
+import { FaInstagram, FaTwitter, FaTiktok, FaYoutube } from 'react-icons/fa'
 import styles from '@/styles/Modal.module.css'
 
 export default function ContactModal({ isOpen, onClose }: ModalProps) {
@@ -11,68 +11,72 @@ export default function ContactModal({ isOpen, onClose }: ModalProps) {
     <div className={styles.overlay} onClick={onClose}>
       <div className={styles.content} onClick={e => e.stopPropagation()}>
         <button className={styles.close} onClick={onClose}>×</button>
-        <div className={styles.directory}>
-          <h2 className={styles.formTitle}>Contact</h2>
-          <form className={styles.form}>
-            <div className={styles.formGroup}>
-              <input 
-                type="text" 
-                placeholder="Name" 
-                className={styles.input}
-              />
-            </div>
-            <div className={styles.formGroup}>
-              <input 
-                type="email" 
-                placeholder="Email" 
-                className={styles.input}
-              />
-            </div>
-            <div className={styles.formGroup}>
-              <textarea 
-                placeholder="Message" 
-                className={styles.textarea}
-                rows={3}
-              />
-            </div>
-            <button type="submit" className={styles.submitButton}>
-              Send Message
-            </button>
-          </form>
-          <div className="flex justify-center gap-6 mt-4">
-            <a 
-              href="https://www.instagram.com/charmladonna" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="text-white hover:opacity-70 transition-opacity"
-            >
-              <FaInstagram size={18} />
-            </a>
-            <a 
-              href="https://twitter.com/CharmLaDonna" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="text-white hover:opacity-70 transition-opacity"
-            >
-              <FaXTwitter size={16} />
-            </a>
-            <a 
-              href="https://www.tiktok.com/@charmladonna" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="text-white hover:opacity-70 transition-opacity"
-            >
-              <FaTiktok size={16} />
-            </a>
-            <a 
-              href="https://www.youtube.com/@CharmLaDonna" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="text-white hover:opacity-70 transition-opacity"
-            >
-              <FaYoutube size={18} />
-            </a>
+        <h2 className={styles.sectionTitle}>Contact</h2>
+        
+        <form className={styles.form}>
+          <div className={styles.formGroup}>
+            <input 
+              type="text" 
+              placeholder="Name" 
+              name="name"
+            />
           </div>
+          <div className={styles.formGroup}>
+            <input 
+              type="email" 
+              placeholder="Email" 
+              name="email"
+            />
+          </div>
+          <div className={styles.formGroup}>
+            <textarea 
+              placeholder="Message" 
+              name="message"
+              rows={4}
+            />
+          </div>
+          <button type="submit" className={styles.submitButton}>
+            Send Message
+          </button>
+        </form>
+
+        <div className={styles.socialLinks}>
+          <a
+            href="https://instagram.com/charmladonna"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.socialIcon}
+            aria-label="Instagram"
+          >
+            <FaInstagram />
+          </a>
+          <a
+            href="https://twitter.com/charmladonna"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.socialIcon}
+            aria-label="Twitter"
+          >
+            <FaTwitter />
+          </a>
+          <a
+            href="https://tiktok.com/@charmladonna"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.socialIcon}
+            aria-label="TikTok"
+          >
+            <FaTiktok />
+          </a>
+          <a
+            href="https://youtube.com/@charmladonna"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.socialIcon}
+            aria-label="YouTube"
+          >
+            <FaYoutube />
+          </a>
         </div>
       </div>
     </div>
