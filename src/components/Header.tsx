@@ -7,7 +7,7 @@ export default function Header() {
       <div className={styles.container}>
         <div className={styles.logo}>
           <Image 
-            src="/logo.png" 
+            src="/logo2.png" 
             alt="Charm LaDonna" 
             width={0}
             height={0}
