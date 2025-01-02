@@ -193,7 +193,7 @@ export const galleryImages: GalleryImage[] = [
     alt: "Rosalía performing Con Altura with dynamic choreography and creative visual direction",
   },
   {
-    src: '/gallery/bad_bunny_baticano.jpg',
+    src: '/gallery/bad_bunny_baticano2.jpg',
     category: "Music Video",
     artist: "Bad Bunny",
     title: "Baticano",
