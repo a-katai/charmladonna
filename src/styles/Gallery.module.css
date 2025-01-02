@@ -2,7 +2,9 @@
     position: relative;
     padding: 20px 0;
     margin-bottom: 40px;
-    width: 100%;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
     overflow: visible;
     -webkit-overflow-scrolling: touch;
   }
@@ -24,14 +26,52 @@
     gap: 24px;
     overflow-x: auto;
     position: relative;
-    padding: 24px 0;
     width: 100%;
-    margin-left: 7.5%;
-    padding-right: 7.5%;
+    padding: 24px 0;
     -webkit-overflow-scrolling: touch;
     scrollbar-width: none;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
+  }
+
+  .item:first-child {
+    margin-left: 7.5%;
+  }
+
+  .item {
+    position: relative;
+    flex: 0 0 400px;
+    width: 400px;
+    height: 600px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    transform-origin: center center;
+    scroll-snap-align: start;
+  }
+
+  @media (max-width: 768px) {
+    .title {
+      margin: 40px auto;
+      font-size: 32px;
+      padding-left: 0;
+    }
+    
+    .track {
+      width: 100%;
+      padding: 24px 0;
+      scroll-snap-type: x mandatory;
+      scroll-behavior: smooth;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .item:first-child {
+      margin-left: 7.5%;
+    }
+
+    .section {
+      padding: 0;
+      margin-bottom: 0;
+    }
   }
   
   .track::-webkit-scrollbar {
@@ -140,14 +180,10 @@
     }
     
     .track {
-      display: flex;
-      gap: 24px;
-      overflow-x: auto;
-      position: relative;
-      padding: 24px 0;
       width: 100%;
       margin-left: 7.5%;
-      padding-right: 7.5%;
+      padding-top: 24px;
+      padding-bottom: 24px;
       scroll-snap-type: x mandatory;
       scroll-behavior: smooth;
       -webkit-overflow-scrolling: touch;
