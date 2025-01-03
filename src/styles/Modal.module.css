@@ -8,9 +8,9 @@
   justify-content: center;
   align-items: center;
   z-index: 2000;
-  background: rgba(0, 0, 0, 0.4);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
   padding: 1rem;
   opacity: 1;
   transition: opacity 0.3s ease;
@@ -26,7 +26,7 @@
   max-width: 900px;
   height: auto;
   min-height: 300px;
-  max-height: 60vh;
+  max-height: 50vh;
   background: white;
   border-radius: 12px;
   padding: 2rem;
