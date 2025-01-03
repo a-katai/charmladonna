@@ -222,9 +222,9 @@
 }
 
 .creditsItem {
-  color: rgba(0, 0, 0, 0.6);
+  color: rgba(0, 0, 0, 0.7);
   font-size: 1rem;
-  line-height: 1.5;
+  line-height: 1.7;
   letter-spacing: 0.01em;
 }
 
@@ -262,40 +262,46 @@
     max-height: 90vh;
     margin: 0;
     border-radius: 20px 20px 0 0;
-    padding: 1.5rem;
+    padding: 1.25rem;
     transform: translateY(0);
-    transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
     will-change: transform;
   }
 
-  .content.closing {
-    transform: translateY(100%);
+  .dragHandle {
+    margin: 0 auto 1rem;
+  }
+
+  .sectionTitle {
+    font-size: 1.5rem;
+    margin: 0 0 1rem;
+  }
+
+  .creditsItem {
+    font-size: 0.9375rem;
+    line-height: 1.5;
   }
 
   .directory {
     padding: 0;
     margin: 0;
-    background: transparent;
   }
 
-  .artist {
-    margin-bottom: 2rem;
-    padding-right: 0;
-  }
-
-  .artistName {
-    font-size: 1.75rem;
+  .creditsSection {
     margin-bottom: 1.5rem;
   }
 
-  .artist p {
-    font-size: 1rem;
-    line-height: 1.6;
-    color: rgba(0, 0, 0, 0.7);
+  .creditsList {
+    gap: 0.875rem;
   }
 
-  .close {
-    top: 1.25rem;
-    right: 1.25rem;
+  .formGroup input,
+  .formGroup textarea {
+    font-size: 0.875rem;
+    padding: 0.75rem 0.875rem;
+  }
+
+  .submitButton {
+    font-size: 0.875rem;
+    padding: 0.75rem;
   }
 }
