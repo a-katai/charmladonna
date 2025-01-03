@@ -10,16 +10,20 @@ interface SwipeHandlerProps {
 
 export default function SwipeHandler({ children, onSwipeDown }: SwipeHandlerProps) {
   const contentRef = useRef<HTMLDivElement>(null)
+  const overlayRef = useRef<HTMLDivElement>(null)
   let startY = 0
   let currentY = 0
+  let startTime = 0
 
   useEffect(() => {
     const content = contentRef.current
-    if (!content) return
+    const overlay = overlayRef.current
+    if (!content || !overlay) return
 
     const handleTouchStart = (e: TouchEvent) => {
       startY = e.touches[0].clientY
       currentY = startY
+      startTime = Date.now()
       content.style.transition = 'none'
     }
 
@@ -29,18 +33,31 @@ export default function SwipeHandler({ children, onSwipeDown }: SwipeHandlerProp
 
       if (deltaY > 0 && content.scrollTop === 0) {
         e.preventDefault()
-        content.style.transform = `translateY(${deltaY}px)`
+        const resistance = 1 - Math.min(deltaY / window.innerHeight, 0.5)
+        content.style.transform = `translateY(${deltaY * resistance}px)`
+        
+        // Fade overlay based on drag distance
+        const opacity = Math.max(0.4 - (deltaY / window.innerHeight) * 0.4, 0)
+        overlay.style.backgroundColor = `rgba(0, 0, 0, ${opacity})`
       }
     }
 
     const handleTouchEnd = () => {
-      content.style.transition = 'transform 0.3s cubic-bezier(0.4, 0, 0.2, 1)'
+      const deltaY = currentY - startY
+      const deltaTime = Date.now() - startTime
+      const velocity = deltaY / deltaTime
+
+      content.style.transition = 'transform 0.5s cubic-bezier(0.16, 1, 0.3, 1)'
+      overlay.style.transition = 'background-color 0.5s cubic-bezier(0.16, 1, 0.3, 1)'
       
-      if (currentY - startY > 100) {
+      // Dismiss if swipe is fast enough or far enough
+      if (velocity > 0.5 || deltaY > 100) {
         content.classList.add(styles.closing)
-        setTimeout(onSwipeDown, 300)
+        overlay.classList.add(styles.closing)
+        setTimeout(onSwipeDown, 500)
       } else {
         content.style.transform = ''
+        overlay.style.backgroundColor = 'rgba(0, 0, 0, 0.4)'
       }
     }
 
@@ -56,9 +73,11 @@ export default function SwipeHandler({ children, onSwipeDown }: SwipeHandlerProp
   }, [onSwipeDown])
 
   return (
-    <div ref={contentRef} className={styles.content} onClick={e => e.stopPropagation()}>
-      <div className={styles.dragHandle} />
-      {children}
+    <div ref={overlayRef} className={styles.overlay} onClick={onSwipeDown}>
+      <div ref={contentRef} className={styles.content} onClick={e => e.stopPropagation()}>
+        <div className={styles.dragHandle} />
+        {children}
+      </div>
     </div>
   )
 } 

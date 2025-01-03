@@ -8,8 +8,16 @@
   justify-content: center;
   align-items: center;
   z-index: 2000;
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
   padding: 1rem;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.overlay.closing {
+  opacity: 0;
 }
 
 .content {
@@ -28,7 +36,8 @@
   flex-direction: column;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
   transform: translateY(0);
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+  -webkit-overflow-scrolling: touch;
 }
 
 .dragHandle {
@@ -78,6 +87,7 @@
   height: 100%;
   overflow-y: auto;
   text-align: left;
+  -webkit-overflow-scrolling: touch;
 }
 
 .artist {
@@ -256,36 +266,47 @@
   .overlay {
     padding: 0;
     align-items: flex-end;
-    background: rgba(0, 0, 0, 0.4);
-    backdrop-filter: blur(5px);
   }
 
   .content {
     min-height: 200px;
-    max-height: 75vh;
+    max-height: 90vh;
     margin: 0;
     border-radius: 20px 20px 0 0;
     padding: 1.5rem;
     transform: translateY(0);
-    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+    will-change: transform;
   }
 
   .content.closing {
     transform: translateY(100%);
   }
 
-  .close {
-    top: 1.25rem;
-    right: 1.25rem;
+  .directory {
+    padding: 0;
+    margin: 0;
+    background: transparent;
   }
 
-  .title {
-    font-size: 1.75rem;
+  .artist {
     margin-bottom: 2rem;
+    padding-right: 0;
+  }
+
+  .artistName {
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
   }
 
   .artist p {
     font-size: 1rem;
     line-height: 1.6;
+    color: rgba(0, 0, 0, 0.7);
+  }
+
+  .close {
+    top: 1.25rem;
+    right: 1.25rem;
   }
 }
