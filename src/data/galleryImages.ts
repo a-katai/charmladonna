@@ -145,7 +145,7 @@ export const galleryImages: GalleryImage[] = [
   {
     src: '/gallery/lil_baby.jpg',
     category: "Live Performance",
-    artist: "Lil Baby",
+    artist: "Lil Baby Live",
     title: "Back Outside Tour",
     description:
       "High-energy routines for Lil Baby's electrifying Back Outside Tour, elevating modern hip-hop performance.",
@@ -193,7 +193,7 @@ export const galleryImages: GalleryImage[] = [
     alt: "Rosalía performing Con Altura with dynamic choreography and creative visual direction",
   },
   {
-    src: '/gallery/bad_bunny_baticano2.jpg',
+    src: '/gallery/bad_bunny_baticano.jpg',
     category: "Music Video",
     artist: "Bad Bunny",
     title: "Baticano",
