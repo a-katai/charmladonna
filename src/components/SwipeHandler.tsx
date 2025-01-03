@@ -1,74 +1,63 @@
 'use client'
 
-import { ReactNode, useEffect, useRef, useState } from 'react'
+import { useRef, useEffect, ReactNode } from 'react'
+import styles from '@/styles/Modal.module.css'
 
 interface SwipeHandlerProps {
   children: ReactNode
   onSwipeDown: () => void
-  threshold?: number
 }
 
-export default function SwipeHandler({ children, onSwipeDown, threshold = 100 }: SwipeHandlerProps) {
-  const [touchStart, setTouchStart] = useState<number | null>(null)
-  const [touchEnd, setTouchEnd] = useState<number | null>(null)
-  const [translateY, setTranslateY] = useState(0)
+export default function SwipeHandler({ children, onSwipeDown }: SwipeHandlerProps) {
   const contentRef = useRef<HTMLDivElement>(null)
-
-  const onTouchStart = (e: TouchEvent) => {
-    setTouchEnd(null)
-    setTouchStart(e.targetTouches[0].clientY)
-  }
-
-  const onTouchMove = (e: TouchEvent) => {
-    if (!touchStart) return
-    const currentTouch = e.targetTouches[0].clientY
-    const diff = currentTouch - touchStart
-
-    // Only allow downward swipes
-    if (diff > 0) {
-      setTranslateY(diff)
-    }
-    setTouchEnd(currentTouch)
-  }
-
-  const onTouchEnd = () => {
-    if (!touchStart || !touchEnd) return
-    const diff = touchEnd - touchStart
-
-    // Check if swipe distance exceeds threshold
-    if (diff > threshold) {
-      onSwipeDown()
-    }
-
-    // Reset position
-    setTranslateY(0)
-    setTouchStart(null)
-    setTouchEnd(null)
-  }
+  let startY = 0
+  let currentY = 0
 
   useEffect(() => {
-    const element = contentRef.current
-    if (!element) return
+    const content = contentRef.current
+    if (!content) return
 
-    element.addEventListener('touchstart', onTouchStart)
-    element.addEventListener('touchmove', onTouchMove)
-    element.addEventListener('touchend', onTouchEnd)
+    const handleTouchStart = (e: TouchEvent) => {
+      startY = e.touches[0].clientY
+      currentY = startY
+      content.style.transition = 'none'
+    }
+
+    const handleTouchMove = (e: TouchEvent) => {
+      const deltaY = e.touches[0].clientY - startY
+      currentY = e.touches[0].clientY
+
+      if (deltaY > 0 && content.scrollTop === 0) {
+        e.preventDefault()
+        content.style.transform = `translateY(${deltaY}px)`
+      }
+    }
+
+    const handleTouchEnd = () => {
+      content.style.transition = 'transform 0.3s cubic-bezier(0.4, 0, 0.2, 1)'
+      
+      if (currentY - startY > 100) {
+        content.classList.add(styles.closing)
+        setTimeout(onSwipeDown, 300)
+      } else {
+        content.style.transform = ''
+      }
+    }
+
+    content.addEventListener('touchstart', handleTouchStart, { passive: false })
+    content.addEventListener('touchmove', handleTouchMove, { passive: false })
+    content.addEventListener('touchend', handleTouchEnd)
 
     return () => {
-      element.removeEventListener('touchstart', onTouchStart)
-      element.removeEventListener('touchmove', onTouchMove)
-      element.removeEventListener('touchend', onTouchEnd)
+      content.removeEventListener('touchstart', handleTouchStart)
+      content.removeEventListener('touchmove', handleTouchMove)
+      content.removeEventListener('touchend', handleTouchEnd)
     }
-  }, [touchStart, touchEnd])
+  }, [onSwipeDown])
 
   return (
-    <div 
-      ref={contentRef}
-      style={{ 
-        transform: `translateY(${translateY}px)`,
-        transition: translateY === 0 ? 'transform 0.3s ease-out' : 'none'
-      }}
-    >
+    <div ref={contentRef} className={styles.content} onClick={e => e.stopPropagation()}>
+      <div className={styles.dragHandle} />
       {children}
     </div>
   )
