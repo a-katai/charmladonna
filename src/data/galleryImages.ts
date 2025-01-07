@@ -26,11 +26,11 @@ export const galleryImages: GalleryImage[] = [
     src: '/gallery/meghan_trainor_timeless.jpg',
     category: "Music Video",
     artist: "Megan Trainor",
-    title: "I Am Your Mother",
+    title: "Mother",
     description:
       "Directed by Charm La'Donna, this video combines bold visuals with memorable choreography.",
     videoId: "https://www.youtube.com/watch?v=9coyY-SPIXU",
-    alt: "Megan Trainor in I Am Your Mother music video, featuring bold visuals and memorable dance sequences",
+    alt: "Megan Trainor in Mother music video, featuring bold visuals and memorable dance sequences",
   },
   {
     src: '/gallery/the_perfect_couple_netflix.jpg',
@@ -88,7 +88,7 @@ export const galleryImages: GalleryImage[] = [
     artist: "Selena Gomez & Rema",
     title: "Calm Down",
     description:
-      "Vibrant choreography and creative direction for this chart-topping global collaboration.",
+      "Directed by Charm La'Donna, this vibrant global collaboration showcases dynamic choreography and creative vision.",
     videoId: "https://www.youtube.com/watch?v=WcIcVapfqXw",
     alt: "Selena Gomez and Rema performing Calm Down with vibrant choreography and creative direction",
   },
