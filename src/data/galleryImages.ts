@@ -33,6 +33,16 @@ export const galleryImages: GalleryImage[] = [
     alt: "Megan Trainor in I Am Your Mother music video, featuring bold visuals and memorable dance sequences",
   },
   {
+    src: '/gallery/salenarema.png',
+    category: "Music Video",
+    artist: "Selena Gomez & Rema",
+    title: "Calm Down",
+    description:
+      "Vibrant choreography and creative direction for this chart-topping global collaboration.",
+    videoId: "https://www.youtube.com/watch?v=WcIcVapfqXw",
+    alt: "Selena Gomez and Rema performing Calm Down with vibrant choreography and creative direction",
+  },
+  {
     src: '/gallery/the_perfect_couple_netflix.jpg',
     category: "Television",
     artist: "Netflix",
@@ -49,7 +59,7 @@ export const galleryImages: GalleryImage[] = [
     title: "Origins Campaign",
     description:
       "Innovative movement direction and choreography for Zara's Origins campaign, merging fashion with dynamic performance.",
-    videoId: "https://www.instagram.com/p/C1H-66bOaNj/?igsh=NTc4MTIwNjQ2YQ%3D%3D&img_index=2",
+    videoId: "https://www.instagram.com/reel/C0erlXYJgY4/?igsh=NTc4MTIwNjQ2YQ==",
     alt: "Zara Origins Campaign featuring artistic movement and choreography that showcases fashion through dynamic performance",
   },
   {
