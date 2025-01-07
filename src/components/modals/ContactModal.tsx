@@ -5,9 +5,12 @@ import { ModalProps } from '@/types/modal'
 import styles from '@/styles/Modal.module.css'
 import SwipeHandler from '@/components/SwipeHandler'
 import { FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa'
+import emailjs from '@emailjs/browser'
 
 export default function ContactModal({ isOpen, onClose }: ModalProps) {
   const [isSubmitted, setIsSubmitted] = useState(false)
+  const [isSubmitting, setIsSubmitting] = useState(false)
+  const [error, setError] = useState('')
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -16,11 +19,30 @@ export default function ContactModal({ isOpen, onClose }: ModalProps) {
 
   if (!isOpen) return null
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    // Here you would typically send the form data to your backend
-    console.log('Form submitted:', formData)
-    setIsSubmitted(true)
+    setIsSubmitting(true)
+    setError('')
+
+    try {
+      await emailjs.send(
+        'service_fix0dr3',
+        'template_k0832uk',
+        {
+          name: formData.name,
+          email: formData.email,
+          message: formData.message,
+        },
+        'JdvHiGgELjn1ZdiRF'
+      )
+
+      setIsSubmitted(true)
+    } catch (err) {
+      setError('Failed to send message. Please try again.')
+      console.error('Error sending message:', err)
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -40,6 +62,7 @@ export default function ContactModal({ isOpen, onClose }: ModalProps) {
             <h2 className={styles.artistName}>Contact</h2>
             {!isSubmitted ? (
               <form className={styles.form} onSubmit={handleSubmit}>
+                {error && <div className={styles.errorMessage}>{error}</div>}
                 <div className={styles.formGroup}>
                   <input 
                     type="text" 
@@ -48,6 +71,7 @@ export default function ContactModal({ isOpen, onClose }: ModalProps) {
                     value={formData.name}
                     onChange={handleInputChange}
                     required
+                    disabled={isSubmitting}
                   />
                 </div>
                 <div className={styles.formGroup}>
@@ -58,6 +82,7 @@ export default function ContactModal({ isOpen, onClose }: ModalProps) {
                     value={formData.email}
                     onChange={handleInputChange}
                     required
+                    disabled={isSubmitting}
                   />
                 </div>
                 <div className={styles.formGroup}>
@@ -68,9 +93,16 @@ export default function ContactModal({ isOpen, onClose }: ModalProps) {
                     value={formData.message}
                     onChange={handleInputChange}
                     required
+                    disabled={isSubmitting}
                   ></textarea>
                 </div>
-                <button type="submit" className={styles.submitButton}>Send Message</button>
+                <button 
+                  type="submit" 
+                  className={styles.submitButton}
+                  disabled={isSubmitting}
+                >
+                  {isSubmitting ? 'Sending...' : 'Send Message'}
+                </button>
               </form>
             ) : (
               <div className={styles.thankYouMessage}>
