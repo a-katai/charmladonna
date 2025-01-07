@@ -79,7 +79,7 @@ export const galleryImages: GalleryImage[] = [
     title: "Dance The Night",
     description:
       "Enchanting choreography for Dua Lipa's Barbie movie music video experience.",
-    videoId: "https://www.youtube.com/watch?v=i7URiJylNNE",
+    videoId: "https://www.youtube.com/watch?v=OiC1rgCPmUQ",
     alt: "Dua Lipa performing Dance The Night from the Barbie movie with enchanting choreography and visual effects",
   },
   {
@@ -155,12 +155,12 @@ export const galleryImages: GalleryImage[] = [
   {
     src: '/gallery/lil_baby.jpg',
     category: "Live Performance",
-    artist: "Lil Baby Live",
-    title: "Back Outside Tour",
+    artist: "Lil Baby",
+    title: "Lil Baby Live",
     description:
-      "High-energy routines for Lil Baby's electrifying Back Outside Tour, elevating modern hip-hop performance.",
+      "High-energy routines for Lil Baby's electrifying live performances, elevating modern hip-hop performance.",
     videoId: "https://www.youtube.com/watch?v=mPS50RtktTQ",
-    alt: "Lil Baby performing on the Back Outside Tour with high-energy choreography that elevates modern hip-hop",
+    alt: "Lil Baby performing live with high-energy choreography that elevates modern hip-hop",
   },
   {
     src: '/gallery/glastonberry.jpg',
