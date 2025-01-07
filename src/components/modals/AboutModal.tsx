@@ -11,7 +11,6 @@ export default function AboutModal({ isOpen, onClose }: ModalProps) {
     <div className={styles.overlay} onClick={onClose}>
       <SwipeHandler onSwipeDown={onClose}>
         <div className={styles.content} onClick={e => e.stopPropagation()}>
-          <div className={styles.dragHandle} />
           <button className={styles.close} onClick={onClose}>×</button>
           <div className={styles.directory}>
             <div className={styles.creditsSection}>
