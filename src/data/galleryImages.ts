@@ -89,7 +89,7 @@ export const galleryImages: GalleryImage[] = [
     title: "Dance The Night",
     description:
       "Enchanting choreography for Dua Lipa's Barbie movie music video experience.",
-    videoId: "https://www.youtube.com/watch?v=8EJ-vZyBzOQ",
+    videoId: "https://www.youtube.com/watch?v=i7URiJylNNE",
     alt: "Dua Lipa performing Dance The Night from the Barbie movie with enchanting choreography and visual effects",
   },
   {
@@ -129,7 +129,7 @@ export const galleryImages: GalleryImage[] = [
     title: "Apple Music Campaign",
     description:
       "Innovative commercial collaboration with Harry Styles for Apple Music, blending tech and artistry.",
-    videoId: "https://www.youtube.com/watch?v=LoMTK0HxPsA",
+    videoId: "https://www.youtube.com/watch?v=i7URiJylNNE",
     alt: "Harry Styles in Apple Music commercial featuring artistic performance that blends technology with creative expression",
   },
   {
