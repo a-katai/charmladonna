@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { ModalProps } from '@/types/modal'
 import styles from '@/styles/Modal.module.css'
 import SwipeHandler from '@/components/SwipeHandler'
@@ -16,6 +16,23 @@ export default function ContactModal({ isOpen, onClose }: ModalProps) {
     email: '',
     message: ''
   })
+
+  useEffect(() => {
+    emailjs.init('JdvHiGgELjn1ZdiRF')
+  }, [])
+
+  useEffect(() => {
+    if (!isOpen) {
+      // Reset form state when modal closes
+      setIsSubmitted(false)
+      setError('')
+      setFormData({
+        name: '',
+        email: '',
+        message: ''
+      })
+    }
+  }, [isOpen])
 
   if (!isOpen) return null
 
