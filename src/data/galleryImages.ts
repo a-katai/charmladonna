@@ -33,16 +33,6 @@ export const galleryImages: GalleryImage[] = [
     alt: "Megan Trainor in I Am Your Mother music video, featuring bold visuals and memorable dance sequences",
   },
   {
-    src: '/gallery/salenarema.png',
-    category: "Music Video",
-    artist: "Selena Gomez & Rema",
-    title: "Calm Down",
-    description:
-      "Vibrant choreography and creative direction for this chart-topping global collaboration.",
-    videoId: "https://www.youtube.com/watch?v=WcIcVapfqXw",
-    alt: "Selena Gomez and Rema performing Calm Down with vibrant choreography and creative direction",
-  },
-  {
     src: '/gallery/the_perfect_couple_netflix.jpg',
     category: "Television",
     artist: "Netflix",
@@ -91,6 +81,16 @@ export const galleryImages: GalleryImage[] = [
       "Enchanting choreography for Dua Lipa's Barbie movie music video experience.",
     videoId: "https://www.youtube.com/watch?v=i7URiJylNNE",
     alt: "Dua Lipa performing Dance The Night from the Barbie movie with enchanting choreography and visual effects",
+  },
+  {
+    src: '/gallery/salenarema.png',
+    category: "Music Video",
+    artist: "Selena Gomez & Rema",
+    title: "Calm Down",
+    description:
+      "Vibrant choreography and creative direction for this chart-topping global collaboration.",
+    videoId: "https://www.youtube.com/watch?v=WcIcVapfqXw",
+    alt: "Selena Gomez and Rema performing Calm Down with vibrant choreography and creative direction",
   },
   {
     src: '/gallery/rich_spirit.jpg',
