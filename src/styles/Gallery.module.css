@@ -15,12 +15,15 @@
     overflow-x: scroll;
     width: 100vw;
     margin-left: calc(-50vw + 50%);
-    padding-top: 24px;
-    padding-bottom: 24px;
+    padding: 24px calc(7.5% + 24px) 24px 0;
   }
 
   .track > div:first-child {
     margin-left: 7.5%;
+  }
+
+  .track > div:last-child {
+    margin-right: 0;
   }
 
   .track::-webkit-scrollbar {
