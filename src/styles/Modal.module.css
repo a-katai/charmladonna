@@ -305,3 +305,19 @@
     padding: 0.75rem;
   }
 }
+
+.thankYouMessage {
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.thankYouMessage h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.thankYouMessage p {
+  font-size: 1rem;
+  color: #666;
+}
