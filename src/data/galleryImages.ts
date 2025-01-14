@@ -39,7 +39,7 @@ export const galleryImages: GalleryImage[] = [
     title: "The Perfect Couple",
     description:
       "Choreography for Netflix's The Perfect Couple, blending storytelling and dance.",
-    videoId: "https://www.youtube.com/watch?v=AdpQuXTWup0",
+    videoId: "https://m.youtube.com/watch?v=HoZqGwHDNqU&pp=ygUYdGhlIHBlcmZlY3QgY291cGxlIGRhbmNl",
     alt: "Scene from Netflix's The Perfect Couple showcasing choreographed dance sequences that enhance the storytelling",
   },
   {
