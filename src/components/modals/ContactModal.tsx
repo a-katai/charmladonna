@@ -44,8 +44,12 @@ export default function ContactModal({ isOpen, onClose }: ModalProps) {
       console.log('Sending email with data:', {
         from_name: formData.name,
         from_email: formData.email,
+        email: formData.email,
         message: formData.message,
-        reply_to: formData.email
+        reply_to: formData.email,
+        to_email: 'charm@charmladonna.com',
+        user_email: formData.email,
+        sender_email: formData.email
       })
       
       const result = await emailjs.send(
@@ -54,8 +58,12 @@ export default function ContactModal({ isOpen, onClose }: ModalProps) {
         {
           from_name: formData.name,
           from_email: formData.email,
+          email: formData.email,
           message: formData.message,
           reply_to: formData.email,
+          to_email: 'charm@charmladonna.com',
+          user_email: formData.email,
+          sender_email: formData.email
         },
         'JdvHiGgELjn1ZdiRF'
       )
@@ -63,11 +71,17 @@ export default function ContactModal({ isOpen, onClose }: ModalProps) {
       console.log('EmailJS response:', result)
       setIsSubmitted(true)
     } catch (err) {
-      setError('Failed to send message. Please try again.')
       console.error('Error sending message:', err)
       if (err instanceof Error) {
-        console.error('Error details:', err.message)
+        console.error('Error details:', {
+          message: err.message,
+          name: err.name,
+          stack: err.stack
+        })
         setError(`Failed to send message: ${err.message}`)
+      } else {
+        console.error('Unknown error type:', err)
+        setError('Failed to send message. Please try again.')
       }
     } finally {
       setIsSubmitting(false)
