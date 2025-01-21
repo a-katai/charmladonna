@@ -43,8 +43,9 @@ export default function ContactModal({ isOpen, onClose }: ModalProps) {
     try {
       console.log('Sending email with data:', {
         from_name: formData.name,
-        email: formData.email,
-        message: formData.message
+        from_email: formData.email,
+        message: formData.message,
+        reply_to: formData.email
       })
       
       const result = await emailjs.send(
@@ -52,9 +53,9 @@ export default function ContactModal({ isOpen, onClose }: ModalProps) {
         'template_k0832uk',
         {
           from_name: formData.name,
-          email: formData.email,
+          from_email: formData.email,
           message: formData.message,
-          reply_to: formData.email, // Add reply_to field explicitly
+          reply_to: formData.email,
         },
         'JdvHiGgELjn1ZdiRF'
       )
