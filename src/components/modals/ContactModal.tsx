@@ -14,86 +14,42 @@ export default function ContactModal({ isOpen, onClose }: ModalProps) {
   const [isSubmitted, setIsSubmitted] = useState(false)
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [error, setError] = useState('')
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: ''
-  })
 
   useEffect(() => {
     if (!isOpen) {
-      // Reset form state when modal closes
       setIsSubmitted(false)
       setError('')
-      setFormData({
-        name: '',
-        email: '',
-        message: ''
-      })
     }
   }, [isOpen])
 
   if (!isOpen) return null
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
     setIsSubmitting(true)
     setError('')
 
+    const form = e.currentTarget
+    const formData = new FormData(form)
+
     try {
-      console.log('Sending email with data:', {
-        from_name: formData.name,
-        from_email: formData.email,
-        email: formData.email,
-        message: formData.message,
-        reply_to: formData.email,
-        to_email: 'charm@charmladonna.com',
-        user_email: formData.email,
-        sender_email: formData.email
-      })
-      
-      const result = await emailjs.send(
+      await emailjs.send(
         'service_fix0dr3',
         'template_k0832uk',
         {
-          from_name: formData.name,
-          from_email: formData.email,
-          email: formData.email,
-          message: formData.message,
-          reply_to: formData.email,
-          to_email: 'charm@charmladonna.com',
-          user_email: formData.email,
-          sender_email: formData.email
+          name: formData.get('name'),
+          email: formData.get('email'),
+          message: formData.get('message')
         },
         'JdvHiGgELjn1ZdiRF'
       )
-
-      console.log('EmailJS response:', result)
       setIsSubmitted(true)
     } catch (err) {
-      console.error('Error sending message:', err)
-      if (err instanceof Error) {
-        console.error('Error details:', {
-          message: err.message,
-          name: err.name,
-          stack: err.stack
-        })
-        setError(`Failed to send message: ${err.message}`)
-      } else {
-        console.error('Unknown error type:', err)
-        setError('Failed to send message. Please try again.')
-      }
+      console.error('Error:', err)
+      setError('Failed to send message. Please try again.')
     } finally {
       setIsSubmitting(false)
     }
-  }
-
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    const { name, value } = e.target
-    setFormData(prev => ({
-      ...prev,
-      [name]: value
-    }))
   }
 
   return (
@@ -111,8 +67,6 @@ export default function ContactModal({ isOpen, onClose }: ModalProps) {
                     type="text" 
                     name="name"
                     placeholder="Name" 
-                    value={formData.name}
-                    onChange={handleInputChange}
                     required
                     disabled={isSubmitting}
                   />
@@ -122,8 +76,6 @@ export default function ContactModal({ isOpen, onClose }: ModalProps) {
                     type="email" 
                     name="email"
                     placeholder="Email" 
-                    value={formData.email}
-                    onChange={handleInputChange}
                     required
                     disabled={isSubmitting}
                   />
@@ -133,8 +85,6 @@ export default function ContactModal({ isOpen, onClose }: ModalProps) {
                     name="message"
                     placeholder="Message" 
                     rows={4}
-                    value={formData.message}
-                    onChange={handleInputChange}
                     required
                     disabled={isSubmitting}
                   ></textarea>
