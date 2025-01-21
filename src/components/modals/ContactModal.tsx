@@ -7,6 +7,9 @@ import SwipeHandler from '@/components/SwipeHandler'
 import { FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa'
 import emailjs from '@emailjs/browser'
 
+// Initialize EmailJS with your public key
+emailjs.init('JdvHiGgELjn1ZdiRF')
+
 export default function ContactModal({ isOpen, onClose }: ModalProps) {
   const [isSubmitted, setIsSubmitted] = useState(false)
   const [isSubmitting, setIsSubmitting] = useState(false)
@@ -16,10 +19,6 @@ export default function ContactModal({ isOpen, onClose }: ModalProps) {
     email: '',
     message: ''
   })
-
-  useEffect(() => {
-    emailjs.init('JdvHiGgELjn1ZdiRF')
-  }, [])
 
   useEffect(() => {
     if (!isOpen) {
@@ -42,21 +41,33 @@ export default function ContactModal({ isOpen, onClose }: ModalProps) {
     setError('')
 
     try {
-      await emailjs.send(
+      console.log('Sending email with data:', {
+        from_name: formData.name,
+        email: formData.email,
+        message: formData.message
+      })
+      
+      const result = await emailjs.send(
         'service_fix0dr3',
         'template_k0832uk',
         {
-          name: formData.name,
+          from_name: formData.name,
           email: formData.email,
           message: formData.message,
+          reply_to: formData.email, // Add reply_to field explicitly
         },
         'JdvHiGgELjn1ZdiRF'
       )
 
+      console.log('EmailJS response:', result)
       setIsSubmitted(true)
     } catch (err) {
       setError('Failed to send message. Please try again.')
       console.error('Error sending message:', err)
+      if (err instanceof Error) {
+        console.error('Error details:', err.message)
+        setError(`Failed to send message: ${err.message}`)
+      }
     } finally {
       setIsSubmitting(false)
     }
