@@ -25,12 +25,12 @@ export const galleryImages: GalleryImage[] = [
   {
     src: '/gallery/meghan_trainor_timeless.jpg',
     category: "Music Video",
-    artist: "Megan Trainor",
+    artist: "Meghan Trainor",
     title: "Mother",
     description:
       "Directed by Charm La'Donna, this video combines bold visuals with memorable choreography.",
     videoId: "https://www.youtube.com/watch?v=9coyY-SPIXU",
-    alt: "Megan Trainor in Mother music video, featuring bold visuals and memorable dance sequences",
+    alt: "Meghan Trainor in Mother music video, featuring bold visuals and memorable dance sequences",
   },
   {
     src: '/gallery/the_perfect_couple_netflix.jpg',
