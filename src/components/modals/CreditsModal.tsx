@@ -141,7 +141,7 @@ export default function CreditsModal({ isOpen, onClose }: ModalProps) {
                 <div className={styles.creditsItem}>Kendrick Lamar "Squabble Up" - Choreographer</div>
                 <div className={styles.creditsItem}>Ava Max "My Head My Heart" - Director/Choreographer</div>
                 <div className={styles.creditsItem}>Bad Bunny "Baticano" - Choreographer</div>
-                <div className={styles.creditsItem}>Bebe Rexha/Doja Cat - Music Video Choreographer</div>
+                <div className={styles.creditsItem}>Bebe Rexha/Doja Cat "Baby, I'm Jealous" - Choreographer</div>
                 <div className={styles.creditsItem}>BIA - "I'm That Bitch" - Choreographer</div>
                 <div className={styles.creditsItem}>BIA - "Lights Out" - Movement Direction</div>
                 <div className={styles.creditsItem}>Coco Jones "Here We Go" - Choreographer</div>
@@ -164,7 +164,7 @@ export default function CreditsModal({ isOpen, onClose }: ModalProps) {
                 <div className={styles.creditsItem}>Meghan Trainor ft. T-Pain "Been Like This" - Choreographer</div>
                 <div className={styles.creditsItem}>Meghan Trainor - "Here We Go" - Choreographer</div>
                 <div className={styles.creditsItem}>Meghan Trainor - "To The Moon" - Choreographer</div>
-                <div className={styles.creditsItem}>Meghan Trainor & Kris Jenner - "I Am Your Mother"</div>
+                <div className={styles.creditsItem}>Meghan Trainor & Kris Jenner - "Mother"</div>
                 <div className={styles.creditsItem}>Mimi Web "Mistake" - Choreographer</div>
                 <div className={styles.creditsItem}>Rosalia "TUYA" - Movement Direction & Director</div>
                 <div className={styles.creditsItem}>Rosalia "Malamente" - Music Choreographer</div>
