@@ -34,7 +34,7 @@ export default function CreditsModal({ isOpen, onClose }: ModalProps) {
                 <div className={styles.creditsItem}>Dua Lipa "Sunday on 60 Minutes" with Anderson Cooper (2024)</div>
                 <div className={styles.creditsItem}>The Weeknd-iHeartRadio Music Awards (2024)</div>
                 <div className={styles.creditsItem}>Dua Lipa -iHeartRadio Music Awards (2024)</div>
-                <div className={styles.creditsItem}>Dua Lia Rock and Roll Hall of Fame (Cher's Induction) (2024)</div>
+                <div className={styles.creditsItem}>Dua Lipa Rock and Roll Hall of Fame (Cher's Induction) (2024)</div>
                 <div className={styles.creditsItem}>Dua Lipa "Live from Royal Albert Hall" (2024)</div>
                 <div className={styles.creditsItem}>Dua Lipa-Grammys (2024)</div>
                 <div className={styles.creditsItem}>Dua Lipa-The Brit Awards (2024)</div>
@@ -112,7 +112,7 @@ export default function CreditsModal({ isOpen, onClose }: ModalProps) {
                 <div className={styles.creditsItem}>Ice Spice - The Scarlet Tour (2023)</div>
                 <div className={styles.creditsItem}>Anitta - UEFA Champions League Final Performance (2023)</div>
                 <div className={styles.creditsItem}>The Weeknd "After Hours Til Dawn" Tour Europe and South America legs (2023)</div>
-                <div className={styles.creditsItem}>Beck G "Mi Casa, Tu Casa" Tour</div>
+                <div className={styles.creditsItem}>Becky G "Mi Casa, Tu Casa" Tour</div>
                 <div className={styles.creditsItem}>Metro Boomin - Amazon Music Live Performance</div>
                 <div className={styles.creditsItem}>Kendrick Lamar - Flog Gnaw Performance</div>
                 <div className={styles.creditsItem}>Kendrick Lamar - Move Afrika-Global Citizen</div>
@@ -149,7 +149,7 @@ export default function CreditsModal({ isOpen, onClose }: ModalProps) {
                 <div className={styles.creditsItem}>Dua Lipa "Dance The Night" - Music Video Choreography</div>
                 <div className={styles.creditsItem}>Dua Lipa "We're Good" - Music Video Choreographer</div>
                 <div className={styles.creditsItem}>Dua Lipa "Training Season" - Music Video Choreographer</div>
-                <div className={styles.creditsItem}>Dua Lipa "Illusions" - Music Video Choreographer</div>
+                <div className={styles.creditsItem}>Dua Lipa "Illusion" - Music Video Choreographer</div>
                 <div className={styles.creditsItem}>Dua Lipa "Don't Start Now" - Music Video Choreographer</div>
                 <div className={styles.creditsItem}>Dua Lipa ft. Da Baby "Levitating" - Music Video Choreographer</div>
                 <div className={styles.creditsItem}>Dua Lipa ft. Miley Cyrus "Prisoner" - Music Video Choreographer</div>
