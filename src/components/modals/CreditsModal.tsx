@@ -32,13 +32,13 @@ export default function CreditsModal({ isOpen, onClose }: ModalProps) {
               <div className={styles.creditsList}>
                 <div className={styles.creditsItem}>The Perfect Couple (Netflix) (2024)</div>
                 <div className={styles.creditsItem}>Dua Lipa "Sunday on 60 Minutes" with Anderson Cooper (2024)</div>
-                <div className={styles.creditsItem}>The Weeknd-iHeartRadio Music Awards (2024)</div>
-                <div className={styles.creditsItem}>Dua Lipa -iHeartRadio Music Awards (2024)</div>
+                <div className={styles.creditsItem}>The Weeknd - iHeartRadio Music Awards (2024)</div>
+                <div className={styles.creditsItem}>Dua Lipa -i HeartRadio Music Awards (2024)</div>
                 <div className={styles.creditsItem}>Dua Lipa Rock and Roll Hall of Fame (Cher's Induction) (2024)</div>
                 <div className={styles.creditsItem}>Dua Lipa "Live from Royal Albert Hall" (2024)</div>
-                <div className={styles.creditsItem}>Dua Lipa-Grammys (2024)</div>
-                <div className={styles.creditsItem}>Dua Lipa-The Brit Awards (2024)</div>
-                <div className={styles.creditsItem}>Dua Lipa-Glastonbury Festival (2024)</div>
+                <div className={styles.creditsItem}>Dua Lipa - Grammys (2024)</div>
+                <div className={styles.creditsItem}>Dua Lipa - The Brit Awards (2024)</div>
+                <div className={styles.creditsItem}>Dua Lipa - Glastonbury Festival (2024)</div>
                 <div className={styles.creditsItem}>Meghan Trainor - "To The Moon" on Jimmy Fallon</div>
                 <div className={styles.creditsItem}>Meghan Trainor – "Wrap Me Up" on Jimmy Kimmel</div>
                 <div className={styles.creditsItem}>Meghan Trainor - American Idol</div>
@@ -98,7 +98,7 @@ export default function CreditsModal({ isOpen, onClose }: ModalProps) {
                 <div className={styles.creditsItem}>Offset Set It Off Tour (2024)</div>
                 <div className={styles.creditsItem}>Tyga - Rolling Loud LA (2024)</div>
                 <div className={styles.creditsItem}>Rosalia - Louis Vuitton Men's Fashion Week Live Performance (2024)</div>
-                <div className={styles.creditsItem}>Bia - NBA Finals Halftime (2024)</div>
+                <div className={styles.creditsItem}>BIA - NBA Finals Halftime (2024)</div>
                 <div className={styles.creditsItem}>Rosalia - Motomami Festival Tour</div>
                 <div className={styles.creditsItem}>Tate McRae - Juno Music Awards</div>
                 <div className={styles.creditsItem}>Peso Pluma "Doble P" Tour</div>
