@@ -1,35 +1,36 @@
-import type { Metadata } from 'next'
+import { Metadata } from 'next'
+
+const baseUrl = 'https://charmladonna.com'
 
 export const metadata: Metadata = {
   title: "Charm La'Donna",
-  description: "Discover the world of Charm La'Donna. From the Super Bowl to global tours, explore her iconic work and inspiring journey.",
+  description: "From choreographing the Super Bowl Halftime Show and the Oscars to collaborating with Beyoncé, Dua Lipa, and Kendrick Lamar, Charm La'Donna stands as one of entertainment's most beloved and in-demand multi-hyphenates.",
   keywords: "Charm La'Donna, choreography, creative direction, Super Bowl Halftime Show, Beyoncé, Kendrick Lamar, Dua Lipa, Selena Gomez, Shakira, Ice Spice, Lil Baby, Pharrell, Shakira, Meghan Trainor, Grammys, Oscars, global tours, dance, mentoring, The Weeknd, Future Nostalgia, After Hours Til Dawn, DAMN, Mr. Morale & The Big Steppers, Madonna, Fatima Robinson, dance mentorship, visionary choreographer, artist storytelling, UCLA World Arts and Culture",
   authors: [{ name: "Charm La'Donna" }],
-  metadataBase: new URL('https://charmladonna.com'),
+  metadataBase: new URL(baseUrl),
   alternates: {
     canonical: '/',
   },
   openGraph: {
     title: "Charm La'Donna",
-    description: "Discover the world of Charm La'Donna. From the Super Bowl to global tours, explore her iconic work and inspiring journey.",
-    url: 'https://charmladonna.com',
+    description: "From choreographing the Super Bowl Halftime Show and the Oscars to collaborating with Beyoncé, Dua Lipa, and Kendrick Lamar, Charm La'Donna stands as one of entertainment's most beloved and in-demand multi-hyphenates.",
+    url: baseUrl,
     siteName: "Charm La'Donna",
-    images: [
-      {
-        url: '/gallery/lululemon_dance_pants.jpg',
-        alt: "Charm La'Donna"
-      },
-    ],
+    images: [{
+      url: `${baseUrl}/026.jpg`,
+      width: 1200,
+      height: 630,
+      alt: "Charm La'Donna",
+    }],
     locale: 'en_US',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
     title: "Charm La'Donna",
-    description: "Discover the world of Charm La'Donna. From the Super Bowl to global tours, explore her iconic work and inspiring journey.",
-    images: ['/gallery/lululemon_dance_pants.jpg'],
-    site: '@CharmLaDonna',
-    creator: '@CharmLaDonna',
+    description: "From choreographing the Super Bowl Halftime Show and the Oscars to collaborating with Beyoncé, Dua Lipa, and Kendrick Lamar, Charm La'Donna stands as one of entertainment's most beloved and in-demand multi-hyphenates.",
+    images: [`${baseUrl}/026.jpg`],
+    creator: '@charmladonna'
   },
   viewport: {
     width: 'device-width',
