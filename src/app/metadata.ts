@@ -1,7 +1,7 @@
 import { Metadata } from 'next'
 
 const baseUrl = 'https://charmladonna.com'
-const mainImage = '/026.jpg'
+const mainImage = 'https://charmladonna.com/026.jpg'
 const mainDescription = "From choreographing the Super Bowl Halftime Show and the Oscars to collaborating with Beyoncé, Dua Lipa, and Kendrick Lamar, Charm La'Donna stands as one of entertainment's most beloved and in-demand multi-hyphenates."
 
 export const metadata: Metadata = {
@@ -23,6 +23,7 @@ export const metadata: Metadata = {
       width: 1200,
       height: 630,
       alt: "Charm La'Donna",
+      type: 'image/jpeg',
     }],
     locale: 'en_US',
     type: 'website',

@@ -4,6 +4,16 @@ import { GalleryImage } from '@/types/gallery';
 
 export const galleryImages: GalleryImage[] = [
   {
+    src: '/gallery/kendrick_superbowl.jpg',
+    category: "Live Performance",
+    artist: "Kendrick Lamar",
+    title: "Super Bowl LIX Halftime Show",
+    description:
+      "Groundbreaking choreography and creative direction for Kendrick Lamar's historic Super Bowl LIX Halftime Show performance.",
+    videoId: "",  // To be updated when available
+    alt: "Kendrick Lamar performing at Super Bowl LIX Halftime Show with innovative choreography and creative direction",
+  },
+  {
     src: '/gallery/beyonce.jpg',
     category: "Live Performance",
     artist: "Beyoncé",
