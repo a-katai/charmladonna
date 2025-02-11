@@ -10,7 +10,7 @@ export const galleryImages: GalleryImage[] = [
     title: "Super Bowl LIX Halftime Show",
     description:
       "Groundbreaking choreography and creative direction for Kendrick Lamar's historic Super Bowl LIX Halftime Show performance.",
-    videoId: "",  // To be updated when available
+    videoId: "https://m.youtube.com/watch?v=KDorKy-13ak",
     alt: "Kendrick Lamar performing at Super Bowl LIX Halftime Show with innovative choreography and creative direction",
   },
   {
