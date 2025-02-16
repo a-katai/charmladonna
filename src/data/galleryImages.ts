@@ -9,9 +9,9 @@ export const galleryImages: GalleryImage[] = [
     artist: "Kendrick Lamar",
     title: "Super Bowl LIX Halftime Show",
     description:
-      "Groundbreaking choreography and creative direction for Kendrick Lamar's historic Super Bowl LIX Halftime Show performance.",
+      "Groundbreaking choreography for Kendrick Lamar's historic Super Bowl LIX Halftime Show performance.",
     videoId: "https://m.youtube.com/watch?v=KDorKy-13ak",
-    alt: "Kendrick Lamar performing at Super Bowl LIX Halftime Show with innovative choreography and creative direction",
+    alt: "Kendrick Lamar performing at Super Bowl LIX Halftime Show with innovative choreography",
   },
   {
     src: '/gallery/beyonce.jpg',
