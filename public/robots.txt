@@ -1,6 +1,10 @@
-# Allow all web crawlers
+# Allow all crawlers
 User-agent: *
 Allow: /
 
-# Sitemap not needed for single page application
-# Sitemap: https://charmladonna.com/sitemap.xml 
+# Sitemap location
+Sitemap: https://charmladonna.com/sitemap.xml
+
+# Prevent crawling of admin or API routes
+Disallow: /api/
+Disallow: /admin/ 
