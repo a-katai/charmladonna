@@ -153,26 +153,6 @@ export const galleryImages: GalleryImage[] = [
     alt: "Lululemon Dance Pants Campaign demonstrating dynamic movement and flexibility through choreographed dance",
   },
   {
-    src: '/gallery/roddy_ricch.jpg',
-    category: "Live Performance",
-    artist: "Roddy Ricch",
-    title: "BET Awards",
-    description:
-      "Creative direction for Roddy Ricch's standout performance at the BET Awards.",
-    videoId: "https://www.youtube.com/watch?v=ieymhnf7oHg",
-    alt: "Roddy Ricch's standout BET Awards performance with creative stage direction and choreography",
-  },
-  {
-    src: '/gallery/lil_baby.jpg',
-    category: "Live Performance",
-    artist: "Lil Baby",
-    title: "Lil Baby Live",
-    description:
-      "High-energy routines for Lil Baby's electrifying live performances, elevating modern hip-hop performance.",
-    videoId: "https://www.youtube.com/watch?v=mPS50RtktTQ",
-    alt: "Lil Baby performing live with high-energy choreography that elevates modern hip-hop",
-  },
-  {
     src: '/gallery/glastonberry.jpg',
     category: "Live Performance",
     artist: "Kendrick Lamar",
