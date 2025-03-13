@@ -18,9 +18,9 @@ export default function AboutModal({ isOpen, onClose }: ModalProps) {
               <div className={styles.creditsList}>
                 <div className={styles.creditsItem}>
                   From choreographing the Super Bowl Halftime Show and the Oscars to collaborating with Beyoncé, 
-                  Dua Lipa, and Kendrick Lamar, Charm La'Donna stands as one of entertainment's most beloved and 
+                  Dua Lipa, The Weeknd, and Kendrick Lamar, Charm La'Donna stands as one of entertainment's most beloved and 
                   in-demand multi-hyphenates. Her visionary work has illuminated performances for Selena Gomez, 
-                  Becky G, Pharrell, Ice Spice, Lil Baby, Shakira, Meghan Trainor, and more—landing on legendary 
+                  Becky G, Pharrell, Shakira, Meghan Trainor, and more—landing on legendary 
                   stages from the Grammys to global tours, including Dua Lipa's Future Nostalgia, The Weeknd's 
                   After Hours Til Dawn, and Kendrick Lamar's DAMN and Mr. Morale & The Big Steppers.
                 </div>
