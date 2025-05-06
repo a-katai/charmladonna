@@ -13,7 +13,7 @@ export const galleryImages: GalleryImage[] = [
     alt: "Kendrick Lamar performing on the Grand National Tour with innovative choreography and stage design",
   },
   {
-    src: '/gallery/radical.jpg',
+    src: '/gallery/optimism.jpg',
     category: "Live Performance",
     artist: "Dua Lipa",
     title: "Radical Optimism Tour",
