@@ -4,6 +4,24 @@ import { GalleryImage } from '@/types/gallery';
 
 export const galleryImages: GalleryImage[] = [
   {
+    src: '/gallery/grand_national_tour.jpg',
+    category: "Live Performance",
+    artist: "Kendrick Lamar",
+    title: "Grand National Tour",
+    description: "Innovative choreography and creative direction for Kendrick Lamar's acclaimed Grand National Tour.",
+    videoId: "",
+    alt: "Kendrick Lamar performing on the Grand National Tour with innovative choreography and stage design",
+  },
+  {
+    src: '/gallery/radical.jpg',
+    category: "Live Performance",
+    artist: "Dua Lipa",
+    title: "Radical Optimism Tour",
+    description: "Dynamic choreography for Dua Lipa's electrifying Radical Optimism Tour performances.",
+    videoId: "",
+    alt: "Dua Lipa performing on the Radical Optimism Tour with dynamic choreography and stage presence",
+  },
+  {
     src: '/gallery/kendrick_superbowl.jpg',
     category: "Live Performance",
     artist: "Kendrick Lamar",
