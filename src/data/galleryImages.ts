@@ -8,9 +8,9 @@ export const galleryImages: GalleryImage[] = [
     category: "Live Performance",
     artist: "Kendrick Lamar",
     title: "Grand National Tour",
-    description: "Innovative choreography and creative direction for Kendrick Lamar's acclaimed Grand National Tour.",
+    description: "Innovative choreography for Kendrick Lamar's acclaimed Grand National Tour.",
     videoId: "",
-    alt: "Kendrick Lamar performing on the Grand National Tour with innovative choreography and stage design",
+    alt: "Kendrick Lamar performing on the Grand National Tour with innovative choreography",
   },
   {
     src: '/gallery/optimism2.jpg',
