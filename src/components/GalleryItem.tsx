@@ -1,6 +1,7 @@
 'use client'
 
 import Image from 'next/image'
+import { useState } from 'react'
 import type { GalleryImage } from '@/types/gallery'
 import styles from '@/styles/Gallery.module.css'
 import { FaPlay } from 'react-icons/fa'
@@ -11,6 +12,8 @@ const DEFAULT_DIMENSIONS = {
 }
 
 export default function GalleryItem({ image }: { image: GalleryImage }) {
+  const [imageError, setImageError] = useState(false)
+
   const handleClick = () => {
     if (image.videoId) {
       // Convert mobile YouTube URLs to standard format
@@ -37,19 +40,35 @@ export default function GalleryItem({ image }: { image: GalleryImage }) {
           <h3 className={styles.itemTitle}>{image.title}</h3>
         </div>
         <div className={styles.imageWrapper}>
-          <Image
-            src={image.src}
-            alt={image.title || 'Gallery image'}
-            width={image.dimensions?.width || DEFAULT_DIMENSIONS.width}
-            height={image.dimensions?.height || DEFAULT_DIMENSIONS.height}
-            className={styles.image}
-            loading="eager"
-            priority={true}
-            quality={75}
-            sizes="(max-width: 768px) 320px, 400px"
-            placeholder="blur"
-            blurDataURL={image.metadata?.blurDataUrl || "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1BST0ZJTEUAAQEAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADb/2wBDABQODxIPDRQSEBIXFRQdHx0fHRsdHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR3/2wBDAR0XFyAeIBYgHh4gIh4fHSMdHR0dIx0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR3/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAb/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCdABmX/9k="}
-          />
+          {!imageError ? (
+            <Image
+              src={image.src}
+              alt={image.title || 'Gallery image'}
+              width={image.dimensions?.width || DEFAULT_DIMENSIONS.width}
+              height={image.dimensions?.height || DEFAULT_DIMENSIONS.height}
+              className={styles.image}
+              loading="eager"
+              priority={true}
+              quality={75}
+              sizes="(max-width: 768px) 320px, 400px"
+              style={{ objectFit: 'cover', width: '100%', height: '100%' }}
+              onError={() => setImageError(true)}
+            />
+          ) : (
+            <div 
+              style={{ 
+                width: '100%', 
+                height: '100%', 
+                backgroundColor: '#111',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                color: '#fff'
+              }}
+            >
+              {image.title}
+            </div>
+          )}
           {image.videoId && (
             <div className={styles.playButton}>
               <FaPlay size={24} />
