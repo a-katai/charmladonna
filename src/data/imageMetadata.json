@@ -1,5 +1,131 @@
 [
   {
+    "id": "02553ee3",
+    "src": "/gallery/IMG_6845.png",
+    "dimensions": {
+      "width": 1290,
+      "height": 2796
+    },
+    "responsive": {
+      "small": {
+        "width": 640,
+        "height": 1387,
+        "formats": {
+          "avif": "/gallery/processed/IMG_6845-small.avif",
+          "webp": "/gallery/processed/IMG_6845-small.webp",
+          "fallback": "/gallery/processed/IMG_6845-small.jpg"
+        }
+      },
+      "medium": {
+        "width": 1024,
+        "height": 2219,
+        "formats": {
+          "avif": "/gallery/processed/IMG_6845-medium.avif",
+          "webp": "/gallery/processed/IMG_6845-medium.webp",
+          "fallback": "/gallery/processed/IMG_6845-medium.jpg"
+        }
+      },
+      "large": {
+        "width": 1920,
+        "height": 4161,
+        "formats": {
+          "avif": "/gallery/processed/IMG_6845-large.avif",
+          "webp": "/gallery/processed/IMG_6845-large.webp",
+          "fallback": "/gallery/processed/IMG_6845-large.jpg"
+        }
+      }
+    },
+    "metadata": {
+      "aspectRatio": 0.4613733905579399,
+      "dominantColor": "rgb(8, 8, 24)",
+      "blurDataUrl": "data:image/jpeg;base64,/9j/2wBDAAUFBQUFBQUGBgUICAcICAsKCQkKCxEMDQwNDBEaEBMQEBMQGhcbFhUWGxcpIBwcICkvJyUnLzkzMzlHREddXX3/2wBDAQUFBQUFBQUGBgUICAcICAsKCQkKCxEMDQwNDBEaEBMQEBMQGhcbFhUWGxcpIBwcICkvJyUnLzkzMzlHREddXX3/wgARCAArABQDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAIDBAUI/8QAGAEAAwEBAAAAAAAAAAAAAAAAAAIEAQP/2gAMAwEAAhADEAAAAOWYtuG2HENMVthIG7ToKLtF6Tz2TlMD/8QAGhAAAwEBAQEAAAAAAAAAAAAAAAEDAmETEf/aAAgBAQABPwBw4aiOR5cNx4OXBfDSQ0ZqOg9manoOpkbGz//EABcRAQEBAQAAAAAAAAAAAAAAAAASARH/2gAIAQIBAT8AhCncUp//xAAXEQADAQAAAAAAAAAAAAAAAAAAARIT/9oACAEDAQE/ANDUlkshEI//2Q=="
+    }
+  },
+  {
+    "id": "03481831",
+    "src": "/gallery/IMG_6846.jpeg",
+    "dimensions": {
+      "width": 1320,
+      "height": 880
+    },
+    "responsive": {
+      "small": {
+        "width": 640,
+        "height": 427,
+        "formats": {
+          "avif": "/gallery/processed/IMG_6846-small.avif",
+          "webp": "/gallery/processed/IMG_6846-small.webp",
+          "fallback": "/gallery/processed/IMG_6846-small.jpg"
+        }
+      },
+      "medium": {
+        "width": 1024,
+        "height": 683,
+        "formats": {
+          "avif": "/gallery/processed/IMG_6846-medium.avif",
+          "webp": "/gallery/processed/IMG_6846-medium.webp",
+          "fallback": "/gallery/processed/IMG_6846-medium.jpg"
+        }
+      },
+      "large": {
+        "width": 1920,
+        "height": 1280,
+        "formats": {
+          "avif": "/gallery/processed/IMG_6846-large.avif",
+          "webp": "/gallery/processed/IMG_6846-large.webp",
+          "fallback": "/gallery/processed/IMG_6846-large.jpg"
+        }
+      }
+    },
+    "metadata": {
+      "aspectRatio": 1.5,
+      "dominantColor": "rgb(56, 40, 40)",
+      "blurDataUrl": "data:image/jpeg;base64,/9j/2wBDAAUFBQUFBQUGBgUICAcICAsKCQkKCxEMDQwNDBEaEBMQEBMQGhcbFhUWGxcpIBwcICkvJyUnLzkzMzlHREddXX3/2wBDAQUFBQUFBQUGBgUICAcICAsKCQkKCxEMDQwNDBEaEBMQEBMQGhcbFhUWGxcpIBwcICkvJyUnLzkzMzlHREddXX3/wgARCAANABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAUCAwf/xAAXAQADAQAAAAAAAAAAAAAAAAABAgME/9oADAMBAAIQAxAAAADHIrapbmYpCv8A/8QAGBAAAwEBAAAAAAAAAAAAAAAAAAEDEwL/2gAIAQEAAT8A2Hc3HRjp0aM//8QAFREBAQAAAAAAAAAAAAAAAAAAABH/2gAIAQIBAT8Aqv/EABURAQEAAAAAAAAAAAAAAAAAAAEQ/9oACAEDAQE/AGf/2Q=="
+    }
+  },
+  {
+    "id": "f6260784",
+    "src": "/gallery/IMG_6855.JPG",
+    "dimensions": {
+      "width": 680,
+      "height": 1020
+    },
+    "responsive": {
+      "small": {
+        "width": 640,
+        "height": 960,
+        "formats": {
+          "avif": "/gallery/processed/IMG_6855-small.avif",
+          "webp": "/gallery/processed/IMG_6855-small.webp",
+          "fallback": "/gallery/processed/IMG_6855-small.jpg"
+        }
+      },
+      "medium": {
+        "width": 1024,
+        "height": 1536,
+        "formats": {
+          "avif": "/gallery/processed/IMG_6855-medium.avif",
+          "webp": "/gallery/processed/IMG_6855-medium.webp",
+          "fallback": "/gallery/processed/IMG_6855-medium.jpg"
+        }
+      },
+      "large": {
+        "width": 1920,
+        "height": 2880,
+        "formats": {
+          "avif": "/gallery/processed/IMG_6855-large.avif",
+          "webp": "/gallery/processed/IMG_6855-large.webp",
+          "fallback": "/gallery/processed/IMG_6855-large.jpg"
+        }
+      }
+    },
+    "metadata": {
+      "aspectRatio": 0.6666666666666666,
+      "dominantColor": "rgb(8, 8, 8)",
+      "blurDataUrl": "data:image/jpeg;base64,/9j/2wBDAAUFBQUFBQUGBgUICAcICAsKCQkKCxEMDQwNDBEaEBMQEBMQGhcbFhUWGxcpIBwcICkvJyUnLzkzMzlHREddXX3/2wBDAQUFBQUFBQUGBgUICAcICAsKCQkKCxEMDQwNDBEaEBMQEBMQGhcbFhUWGxcpIBwcICkvJyUnLzkzMzlHREddXX3/wgARCAAeABQDASIAAhEBAxEB/8QAGQAAAwADAAAAAAAAAAAAAAAAAAIEAwUI/8QAFwEBAQEBAAAAAAAAAAAAAAAAAgMEBf/aAAwDAQACEAMQAAAA5BalodvXlAoZXjYaHJxQ/8QAGBABAQEBAQAAAAAAAAAAAAAAAgABAyH/2gAIAQEAAT8APO3naIGRkfYK1S32Lte2q//EABYRAQEBAAAAAAAAAAAAAAAAAAAREv/aAAgBAgEBPwDSso//xAAbEQACAgMBAAAAAAAAAAAAAAAAAQIDBBESIf/aAAgBAwEBPwBY6cR0rZG9cjt9P//Z"
+    }
+  },
+  {
     "id": "d34bf051",
     "src": "/gallery/apple_music_harry_styles.jpg",
     "dimensions": {
@@ -84,16 +210,16 @@
     }
   },
   {
-    "id": "317a3250",
+    "id": "a1bb902d",
     "src": "/gallery/bad_bunny_baticano.jpg",
     "dimensions": {
-      "width": 669,
-      "height": 535
+      "width": 1619,
+      "height": 1283
     },
     "responsive": {
       "small": {
         "width": 640,
-        "height": 512,
+        "height": 507,
         "formats": {
           "avif": "/gallery/processed/bad_bunny_baticano-small.avif",
           "webp": "/gallery/processed/bad_bunny_baticano-small.webp",
@@ -102,7 +228,7 @@
       },
       "medium": {
         "width": 1024,
-        "height": 819,
+        "height": 811,
         "formats": {
           "avif": "/gallery/processed/bad_bunny_baticano-medium.avif",
           "webp": "/gallery/processed/bad_bunny_baticano-medium.webp",
@@ -111,7 +237,7 @@
       },
       "large": {
         "width": 1920,
-        "height": 1535,
+        "height": 1522,
         "formats": {
           "avif": "/gallery/processed/bad_bunny_baticano-large.avif",
           "webp": "/gallery/processed/bad_bunny_baticano-large.webp",
@@ -120,9 +246,51 @@
       }
     },
     "metadata": {
-      "aspectRatio": 1.250467289719626,
+      "aspectRatio": 1.2618862042088854,
       "dominantColor": "rgb(8, 8, 8)",
-      "blurDataUrl": "data:image/jpeg;base64,/9j/2wBDAAUFBQUFBQUGBgUICAcICAsKCQkKCxEMDQwNDBEaEBMQEBMQGhcbFhUWGxcpIBwcICkvJyUnLzkzMzlHREddXX3/2wBDAQUFBQUFBQUGBgUICAcICAsKCQkKCxEMDQwNDBEaEBMQEBMQGhcbFhUWGxcpIBwcICkvJyUnLzkzMzlHREddXX3/wgARCAAQABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAQFB//EABQBAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhADEAAAAM6TVTLpLD//xAAeEAABAwQDAAAAAAAAAAAAAAAAAQIhAwQRMRMUYf/aAAgBAQABPwCs9DkTI18Fe59OxOxtxGz/xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/AD//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/AD//2Q=="
+      "blurDataUrl": "data:image/jpeg;base64,/9j/2wBDAAUFBQUFBQUGBgUICAcICAsKCQkKCxEMDQwNDBEaEBMQEBMQGhcbFhUWGxcpIBwcICkvJyUnLzkzMzlHREddXX3/2wBDAQUFBQUFBQUGBgUICAcICAsKCQkKCxEMDQwNDBEaEBMQEBMQGhcbFhUWGxcpIBwcICkvJyUnLzkzMzlHREddXX3/wgARCAAQABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAIBAwj/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIQAxAAAADKLw5WOH//xAAYEAEAAwEAAAAAAAAAAAAAAAAAAhESAf/aAAgBAQABPwCMWWUerW//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/AD//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/AD//2Q=="
+    }
+  },
+  {
+    "id": "1838652a",
+    "src": "/gallery/bad_bunny_baticano2.jpg",
+    "dimensions": {
+      "width": 2048,
+      "height": 1541
+    },
+    "responsive": {
+      "small": {
+        "width": 640,
+        "height": 482,
+        "formats": {
+          "avif": "/gallery/processed/bad_bunny_baticano2-small.avif",
+          "webp": "/gallery/processed/bad_bunny_baticano2-small.webp",
+          "fallback": "/gallery/processed/bad_bunny_baticano2-small.jpg"
+        }
+      },
+      "medium": {
+        "width": 1024,
+        "height": 771,
+        "formats": {
+          "avif": "/gallery/processed/bad_bunny_baticano2-medium.avif",
+          "webp": "/gallery/processed/bad_bunny_baticano2-medium.webp",
+          "fallback": "/gallery/processed/bad_bunny_baticano2-medium.jpg"
+        }
+      },
+      "large": {
+        "width": 1920,
+        "height": 1445,
+        "formats": {
+          "avif": "/gallery/processed/bad_bunny_baticano2-large.avif",
+          "webp": "/gallery/processed/bad_bunny_baticano2-large.webp",
+          "fallback": "/gallery/processed/bad_bunny_baticano2-large.jpg"
+        }
+      }
+    },
+    "metadata": {
+      "aspectRatio": 1.3290071382219337,
+      "dominantColor": "rgb(8, 8, 8)",
+      "blurDataUrl": "data:image/jpeg;base64,/9j/2wBDAAUFBQUFBQUGBgUICAcICAsKCQkKCxEMDQwNDBEaEBMQEBMQGhcbFhUWGxcpIBwcICkvJyUnLzkzMzlHREddXX3/2wBDAQUFBQUFBQUGBgUICAcICAsKCQkKCxEMDQwNDBEaEBMQEBMQGhcbFhUWGxcpIBwcICkvJyUnLzkzMzlHREddXX3/wgARCAAPABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAUCBgf/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIQAxAAAADLY1kGAnD/xAAbEAABBQEBAAAAAAAAAAAAAAAAAQIDBCERMf/aAAgBAQABPwBl3PSW31PSSfrl0bZUdZUdNp//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/AD//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/AD//2Q=="
     }
   },
   {
@@ -294,6 +462,48 @@
     }
   },
   {
+    "id": "2cc5d6a4",
+    "src": "/gallery/grand_national_tour.jpg",
+    "dimensions": {
+      "width": 1733,
+      "height": 2599
+    },
+    "responsive": {
+      "small": {
+        "width": 640,
+        "height": 960,
+        "formats": {
+          "avif": "/gallery/processed/grand_national_tour-small.avif",
+          "webp": "/gallery/processed/grand_national_tour-small.webp",
+          "fallback": "/gallery/processed/grand_national_tour-small.jpg"
+        }
+      },
+      "medium": {
+        "width": 1024,
+        "height": 1536,
+        "formats": {
+          "avif": "/gallery/processed/grand_national_tour-medium.avif",
+          "webp": "/gallery/processed/grand_national_tour-medium.webp",
+          "fallback": "/gallery/processed/grand_national_tour-medium.jpg"
+        }
+      },
+      "large": {
+        "width": 1920,
+        "height": 2879,
+        "formats": {
+          "avif": "/gallery/processed/grand_national_tour-large.avif",
+          "webp": "/gallery/processed/grand_national_tour-large.webp",
+          "fallback": "/gallery/processed/grand_national_tour-large.jpg"
+        }
+      }
+    },
+    "metadata": {
+      "aspectRatio": 0.666794921123509,
+      "dominantColor": "rgb(8, 8, 8)",
+      "blurDataUrl": "data:image/jpeg;base64,/9j/2wBDAAUFBQUFBQUGBgUICAcICAsKCQkKCxEMDQwNDBEaEBMQEBMQGhcbFhUWGxcpIBwcICkvJyUnLzkzMzlHREddXX3/2wBDAQUFBQUFBQUGBgUICAcICAsKCQkKCxEMDQwNDBEaEBMQEBMQGhcbFhUWGxcpIBwcICkvJyUnLzkzMzlHREddXX3/wgARCAAeABQDASIAAhEBAxEB/8QAGgAAAgIDAAAAAAAAAAAAAAAAAAUCBgEDCP/EABcBAQEBAQAAAAAAAAAAAAAAAAABAgT/2gAMAwEAAhADEAAAAObov49KuD0l25r88V2Jw//EABsQAAICAwEAAAAAAAAAAAAAAAABAgQDE2EU/9oACAEBAAE/APNwdbg6/DUiWJDwoWZG1GxCsyFZkb5H/8QAFxEBAAMAAAAAAAAAAAAAAAAAABAREv/aAAgBAgEBPwCNLf/EABYRAAMAAAAAAAAAAAAAAAAAAAAQEf/aAAgBAwEBPwBw/9k="
+    }
+  },
+  {
     "id": "c6a85c2d",
     "src": "/gallery/houdini.jpg",
     "dimensions": {
@@ -375,6 +585,48 @@
       "aspectRatio": 1.7777777777777777,
       "dominantColor": "rgb(136, 120, 40)",
       "blurDataUrl": "data:image/jpeg;base64,/9j/2wBDAAUFBQUFBQUGBgUICAcICAsKCQkKCxEMDQwNDBEaEBMQEBMQGhcbFhUWGxcpIBwcICkvJyUnLzkzMzlHREddXX3/2wBDAQUFBQUFBQUGBgUICAcICAsKCQkKCxEMDQwNDBEaEBMQEBMQGhcbFhUWGxcpIBwcICkvJyUnLzkzMzlHREddXX3/wgARCAALABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAQCBf/EABYBAQEBAAAAAAAAAAAAAAAAAAEFBv/aAAwDAQACEAMQAAAA427WMtwrA//EABoQAAICAwAAAAAAAAAAAAAAAAABERMCA1H/2gAIAQEAAT8Ax0lZWQuEIaR//8QAFREBAQAAAAAAAAAAAAAAAAAAABH/2gAIAQIBAT8AiP/EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8AP//Z"
+    }
+  },
+  {
+    "id": "4cc2cd5f",
+    "src": "/gallery/kendrick_superbowl.jpg",
+    "dimensions": {
+      "width": 1440,
+      "height": 907
+    },
+    "responsive": {
+      "small": {
+        "width": 640,
+        "height": 403,
+        "formats": {
+          "avif": "/gallery/processed/kendrick_superbowl-small.avif",
+          "webp": "/gallery/processed/kendrick_superbowl-small.webp",
+          "fallback": "/gallery/processed/kendrick_superbowl-small.jpg"
+        }
+      },
+      "medium": {
+        "width": 1024,
+        "height": 645,
+        "formats": {
+          "avif": "/gallery/processed/kendrick_superbowl-medium.avif",
+          "webp": "/gallery/processed/kendrick_superbowl-medium.webp",
+          "fallback": "/gallery/processed/kendrick_superbowl-medium.jpg"
+        }
+      },
+      "large": {
+        "width": 1920,
+        "height": 1209,
+        "formats": {
+          "avif": "/gallery/processed/kendrick_superbowl-large.avif",
+          "webp": "/gallery/processed/kendrick_superbowl-large.webp",
+          "fallback": "/gallery/processed/kendrick_superbowl-large.jpg"
+        }
+      }
+    },
+    "metadata": {
+      "aspectRatio": 1.587651598676957,
+      "dominantColor": "rgb(248, 248, 248)",
+      "blurDataUrl": "data:image/jpeg;base64,/9j/2wBDAAUFBQUFBQUGBgUICAcICAsKCQkKCxEMDQwNDBEaEBMQEBMQGhcbFhUWGxcpIBwcICkvJyUnLzkzMzlHREddXX3/2wBDAQUFBQUFBQUGBgUICAcICAsKCQkKCxEMDQwNDBEaEBMQEBMQGhcbFhUWGxcpIBwcICkvJyUnLzkzMzlHREddXX3/wgARCAANABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAQGB//EABYBAQEBAAAAAAAAAAAAAAAAAAMCBP/aAAwDAQACEAMQAAAAz964YXbDF4Qv/8QAHRAAAgEEAwAAAAAAAAAAAAAAAAMCAQQFYhQVUv/aAAgBAQABPwBeKr5IYvU6vUhZKI2ijirP/8QAFREBAQAAAAAAAAAAAAAAAAAAARD/2gAIAQIBAT8AWf/EABYRAQEBAAAAAAAAAAAAAAAAAAACIf/aAAgBAwEBPwCGP//Z"
     }
   },
   {
@@ -546,6 +798,132 @@
     }
   },
   {
+    "id": "034d3eab",
+    "src": "/gallery/optimism.jpg",
+    "dimensions": {
+      "width": 1800,
+      "height": 1013
+    },
+    "responsive": {
+      "small": {
+        "width": 640,
+        "height": 360,
+        "formats": {
+          "avif": "/gallery/processed/optimism-small.avif",
+          "webp": "/gallery/processed/optimism-small.webp",
+          "fallback": "/gallery/processed/optimism-small.jpg"
+        }
+      },
+      "medium": {
+        "width": 1024,
+        "height": 576,
+        "formats": {
+          "avif": "/gallery/processed/optimism-medium.avif",
+          "webp": "/gallery/processed/optimism-medium.webp",
+          "fallback": "/gallery/processed/optimism-medium.jpg"
+        }
+      },
+      "large": {
+        "width": 1920,
+        "height": 1081,
+        "formats": {
+          "avif": "/gallery/processed/optimism-large.avif",
+          "webp": "/gallery/processed/optimism-large.webp",
+          "fallback": "/gallery/processed/optimism-large.jpg"
+        }
+      }
+    },
+    "metadata": {
+      "aspectRatio": 1.7769002961500493,
+      "dominantColor": "rgb(88, 168, 232)",
+      "blurDataUrl": "data:image/jpeg;base64,/9j/2wBDAAUFBQUFBQUGBgUICAcICAsKCQkKCxEMDQwNDBEaEBMQEBMQGhcbFhUWGxcpIBwcICkvJyUnLzkzMzlHREddXX3/2wBDAQUFBQUFBQUGBgUICAcICAsKCQkKCxEMDQwNDBEaEBMQEBMQGhcbFhUWGxcpIBwcICkvJyUnLzkzMzlHREddXX3/wgARCAALABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAABQACA//EABcBAAMBAAAAAAAAAAAAAAAAAAEDBAb/2gAMAwEAAhADEAAAAGOqGtNAVIwf/8QAGhAAAgIDAAAAAAAAAAAAAAAAAAECUQMEE//aAAgBAQABPwCGucR4SMVQ0qGlR//EABgRAAIDAAAAAAAAAAAAAAAAAAACAQMT/9oACAECAQE/AJvY2Y//xAAYEQADAQEAAAAAAAAAAAAAAAAAAQIEE//aAAgBAwEBPwCMsI4o/9k="
+    }
+  },
+  {
+    "id": "aed8f0a9",
+    "src": "/gallery/optimism2.jpg",
+    "dimensions": {
+      "width": 2000,
+      "height": 1333
+    },
+    "responsive": {
+      "small": {
+        "width": 640,
+        "height": 427,
+        "formats": {
+          "avif": "/gallery/processed/optimism2-small.avif",
+          "webp": "/gallery/processed/optimism2-small.webp",
+          "fallback": "/gallery/processed/optimism2-small.jpg"
+        }
+      },
+      "medium": {
+        "width": 1024,
+        "height": 682,
+        "formats": {
+          "avif": "/gallery/processed/optimism2-medium.avif",
+          "webp": "/gallery/processed/optimism2-medium.webp",
+          "fallback": "/gallery/processed/optimism2-medium.jpg"
+        }
+      },
+      "large": {
+        "width": 1920,
+        "height": 1280,
+        "formats": {
+          "avif": "/gallery/processed/optimism2-large.avif",
+          "webp": "/gallery/processed/optimism2-large.webp",
+          "fallback": "/gallery/processed/optimism2-large.jpg"
+        }
+      }
+    },
+    "metadata": {
+      "aspectRatio": 1.5003750937734435,
+      "dominantColor": "rgb(8, 8, 8)",
+      "blurDataUrl": "data:image/jpeg;base64,/9j/2wBDAAUFBQUFBQUGBgUICAcICAsKCQkKCxEMDQwNDBEaEBMQEBMQGhcbFhUWGxcpIBwcICkvJyUnLzkzMzlHREddXX3/2wBDAQUFBQUFBQUGBgUICAcICAsKCQkKCxEMDQwNDBEaEBMQEBMQGhcbFhUWGxcpIBwcICkvJyUnLzkzMzlHREddXX3/wgARCAANABQDASIAAhEBAxEB/8QAGgAAAQUBAAAAAAAAAAAAAAAAAAECAwQFB//EABYBAQEBAAAAAAAAAAAAAAAAAAQDBf/aAAwDAQACEAMQAAAA4bWR7MjKJSaP/8QAHBAAAgICAwAAAAAAAAAAAAAAAAIBAxESIjEy/9oACAEBAAE/AN8lsDryK2mR+h/R/8QAFxEAAwEAAAAAAAAAAAAAAAAAAAERAv/aAAgBAgEBPwB7pT//xAAYEQACAwAAAAAAAAAAAAAAAAAAAgEDEv/aAAgBAwEBPwBaoUyf/9k="
+    }
+  },
+  {
+    "id": "84af69bd",
+    "src": "/gallery/radical.jpg",
+    "dimensions": {
+      "width": 900,
+      "height": 506
+    },
+    "responsive": {
+      "small": {
+        "width": 640,
+        "height": 360,
+        "formats": {
+          "avif": "/gallery/processed/radical-small.avif",
+          "webp": "/gallery/processed/radical-small.webp",
+          "fallback": "/gallery/processed/radical-small.jpg"
+        }
+      },
+      "medium": {
+        "width": 1024,
+        "height": 576,
+        "formats": {
+          "avif": "/gallery/processed/radical-medium.avif",
+          "webp": "/gallery/processed/radical-medium.webp",
+          "fallback": "/gallery/processed/radical-medium.jpg"
+        }
+      },
+      "large": {
+        "width": 1920,
+        "height": 1079,
+        "formats": {
+          "avif": "/gallery/processed/radical-large.avif",
+          "webp": "/gallery/processed/radical-large.webp",
+          "fallback": "/gallery/processed/radical-large.jpg"
+        }
+      }
+    },
+    "metadata": {
+      "aspectRatio": 1.7786561264822134,
+      "dominantColor": "rgb(88, 168, 232)",
+      "blurDataUrl": "data:image/jpeg;base64,/9j/2wBDAAUFBQUFBQUGBgUICAcICAsKCQkKCxEMDQwNDBEaEBMQEBMQGhcbFhUWGxcpIBwcICkvJyUnLzkzMzlHREddXX3/2wBDAQUFBQUFBQUGBgUICAcICAsKCQkKCxEMDQwNDBEaEBMQEBMQGhcbFhUWGxcpIBwcICkvJyUnLzkzMzlHREddXX3/wgARCAALABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAUCAwT/xAAXAQADAQAAAAAAAAAAAAAAAAABAwQG/9oADAMBAAIQAxAAAABxdvnpoFQxA/8A/8QAHBAAAgICAwAAAAAAAAAAAAAAAAECUQMEERNh/9oACAEBAAE/AIa/h0jwkYqhpUcKj//EABgRAAIDAAAAAAAAAAAAAAAAAAACAQMT/9oACAECAQE/AJvY2Y//xAAYEQACAwAAAAAAAAAAAAAAAAAAAgEEE//aAAgBAwEBPwBKyQYqf//Z"
+    }
+  },
+  {
     "id": "9ff52d9e",
     "src": "/gallery/rich_spirit.jpg",
     "dimensions": {
@@ -711,6 +1089,48 @@
       "aspectRatio": 0.8,
       "dominantColor": "rgb(8, 8, 8)",
       "blurDataUrl": "data:image/jpeg;base64,/9j/2wBDAAUFBQUFBQUGBgUICAcICAsKCQkKCxEMDQwNDBEaEBMQEBMQGhcbFhUWGxcpIBwcICkvJyUnLzkzMzlHREddXX3/2wBDAQUFBQUFBQUGBgUICAcICAsKCQkKCxEMDQwNDBEaEBMQEBMQGhcbFhUWGxcpIBwcICkvJyUnLzkzMzlHREddXX3/wgARCAAZABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAQFBgL/xAAXAQADAQAAAAAAAAAAAAAAAAADBAYC/9oADAMBAAIQAxAAAADmc3CyRAni9XqctcyTMaoTgFh//8QAHxAAAQMEAwEAAAAAAAAAAAAAAAEDBAIRISISMUEy/9oACAEBAAE/AFwhJrSyjtW6j7nG5Kkd5HH9lyTH7XJcnvJXJ2Unekv0r+lP/8QAFREBAQAAAAAAAAAAAAAAAAAAAxD/2gAIAQIBAT8ASJP/xAAcEQACAgIDAAAAAAAAAAAAAAAAAgESBHEFISL/2gAIAQMBAT8AwWu0CrFV0cZPait5XR//2Q=="
+    }
+  },
+  {
+    "id": "79c02340",
+    "src": "/gallery/salenarema.png",
+    "dimensions": {
+      "width": 2852,
+      "height": 1516
+    },
+    "responsive": {
+      "small": {
+        "width": 640,
+        "height": 340,
+        "formats": {
+          "avif": "/gallery/processed/salenarema-small.avif",
+          "webp": "/gallery/processed/salenarema-small.webp",
+          "fallback": "/gallery/processed/salenarema-small.jpg"
+        }
+      },
+      "medium": {
+        "width": 1024,
+        "height": 544,
+        "formats": {
+          "avif": "/gallery/processed/salenarema-medium.avif",
+          "webp": "/gallery/processed/salenarema-medium.webp",
+          "fallback": "/gallery/processed/salenarema-medium.jpg"
+        }
+      },
+      "large": {
+        "width": 1920,
+        "height": 1021,
+        "formats": {
+          "avif": "/gallery/processed/salenarema-large.avif",
+          "webp": "/gallery/processed/salenarema-large.webp",
+          "fallback": "/gallery/processed/salenarema-large.jpg"
+        }
+      }
+    },
+    "metadata": {
+      "aspectRatio": 1.8812664907651715,
+      "dominantColor": "rgb(24, 24, 24)",
+      "blurDataUrl": "data:image/jpeg;base64,/9j/2wBDAAUFBQUFBQUGBgUICAcICAsKCQkKCxEMDQwNDBEaEBMQEBMQGhcbFhUWGxcpIBwcICkvJyUnLzkzMzlHREddXX3/2wBDAQUFBQUFBQUGBgUICAcICAsKCQkKCxEMDQwNDBEaEBMQEBMQGhcbFhUWGxcpIBwcICkvJyUnLzkzMzlHREddXX3/wgARCAALABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAQFBv/EABYBAQEBAAAAAAAAAAAAAAAAAAQAAv/aAAwDAQACEAMQAAAAwE1VIh3SaZv/xAAdEAABBAIDAAAAAAAAAAAAAAAAAQIDBFFhESEx/9oACAEBAAE/AJrWySzsWbv0kc7I9y5OVP/EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8AP//EABcRAQEBAQAAAAAAAAAAAAAAAAEAAhL/2gAIAQMBAT8AcFwX/9k="
     }
   },
   {
