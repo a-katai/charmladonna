@@ -4,7 +4,7 @@ import { GalleryImage } from '@/types/gallery';
 
 export const galleryImages: GalleryImage[] = [
   {
-    src: '/gallery/grand_national_tour.jpg',
+    src: '/gallery/IMG_6846.jpeg',
     category: "Live Performance",
     artist: "Kendrick Lamar",
     title: "Grand National Tour",
@@ -13,7 +13,7 @@ export const galleryImages: GalleryImage[] = [
     alt: "Kendrick Lamar performing on the Grand National Tour with innovative choreography",
   },
   {
-    src: '/gallery/optimism2.jpg',
+    src: '/gallery/IMG_6855.JPG',
     category: "Live Performance",
     artist: "Dua Lipa",
     title: "Radical Optimism Tour",
